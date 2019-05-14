@@ -4,7 +4,8 @@
              xmlns:skia="clr-namespace:SkiaSharp.Views.Forms;assembly=SkiaSharp.Views.Forms"
              x:Class="App1.Play_Page">
     <ContentPage.Content>
-        <skia:SKCanvasView PaintSurface="SKCanvasView_PaintSurface" >
+        <skia:SKCanvasView x:Name="canvasView"
+            PaintSurface="SKCanvasView_PaintSurface" >
             <skia:SKCanvasView.GestureRecognizers>
                 <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped">
                     

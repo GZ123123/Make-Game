@@ -14,10 +14,18 @@ namespace App1
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class Play_Page : ContentPage
 	{
+        private int angle = 0;
+
 		public Play_Page ()
 		{
 			InitializeComponent ();
-		}
+
+            Device.StartTimer(TimeSpan.FromSeconds(1f/60 ), () =>
+             {
+                 canvasView.InvalidateSurface();
+                 return true;
+             });
+        }
 
         bool ShowFill = false;
 
@@ -33,20 +41,34 @@ namespace App1
             {
                 Style = SKPaintStyle.Stroke,
                 Color = SKColors.Blue,
-                StrokeWidth = 20
+                StrokeWidth = 10
             };
+
+            if (ShowFill)
+            {
+                paint.Color = SKColors.Red;
+            }
 
             //canvas.DrawCircle(info.Width / 2, info.Height / 2,100, paint);
 
-            canvas.DrawLine(info.Width / 2 - 120, info.Height / 2,info.Width / 2 + 120,info.Height / 2 -20, paint);
+            angle += 5;
+            angle %= 100;
 
-            canvas.RotateDegrees(120);
+            canvas.Save();
+
+            canvas.Translate(info.Width / 2, info.Height / 2);
+            canvas.RotateDegrees(angle);
+
+
+            canvas.DrawLine( 0, 0,0, -120, paint);
+            canvas.Restore();
+            
 
         }
 
         private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
-
+            ShowFill ^= true;
         }
     }
 }
