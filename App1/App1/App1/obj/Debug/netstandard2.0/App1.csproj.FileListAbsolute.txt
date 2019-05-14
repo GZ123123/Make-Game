@@ -25,6 +25,6 @@ D:\VS\Make-Game\App1\App1\App1\obj\Debug\netstandard2.0\Setting.xaml.g.cs
 D:\VS\Make-Game\App1\App1\App1\obj\Debug\netstandard2.0\App1.csproj.CoreCompileInputs.cache
 D:\VS\Make-Game\App1\App1\App1\obj\Debug\netstandard2.0\App1.AssemblyInfoInputs.cache
 D:\VS\Make-Game\App1\App1\App1\obj\Debug\netstandard2.0\App1.AssemblyInfo.cs
-D:\VS\Make-Game\App1\App1\App1\obj\Debug\netstandard2.0\XamlC.stamp
 D:\VS\Make-Game\App1\App1\App1\obj\Debug\netstandard2.0\App1.dll
 D:\VS\Make-Game\App1\App1\App1\obj\Debug\netstandard2.0\App1.pdb
+D:\VS\Make-Game\App1\App1\App1\obj\Debug\netstandard2.0\XamlC.stamp

@@ -8,26 +8,41 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using SkiaSharp.Views.Forms;
 using SkiaSharp;
+using App1.Object;
 
 namespace App1
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class Play_Page : ContentPage
 	{
-        private int angle = 0;
+        private List<Stand> _stands;
 
-		public Play_Page ()
+        bool ShowFill = false;
+
+        SKPaint paint = new SKPaint()
+        {
+            Style = SKPaintStyle.Stroke,
+            Color = SKColors.Blue,
+            StrokeWidth = 10
+        };
+
+        public Play_Page ()
 		{
 			InitializeComponent ();
 
-            Device.StartTimer(TimeSpan.FromSeconds(1f/60 ), () =>
-             {
-                 canvasView.InvalidateSurface();
-                 return true;
-             });
-        }
+            SKPoint current_pos = new SKPoint(0,200);
 
-        bool ShowFill = false;
+            _stands = new List<Stand>();
+
+            Device.StartTimer(TimeSpan.FromSeconds(5f), () =>
+              {
+                  current_pos = SKPoint.Add(current_pos, new SKSize(100, 50));
+                  _stands.Add(new Stand(current_pos, paint: paint));
+                  if (_stands.Count > 3) _stands.RemoveAt(0);
+                  canvasView.InvalidateSurface();
+                  return true;
+              });
+        }
 
         private void SKCanvasView_PaintSurface(object sender, SKPaintSurfaceEventArgs e)
         {
@@ -36,34 +51,8 @@ namespace App1
             SKCanvas canvas = surface.Canvas;
 
             canvas.Clear();
-
-            SKPaint paint = new SKPaint()
-            {
-                Style = SKPaintStyle.Stroke,
-                Color = SKColors.Blue,
-                StrokeWidth = 10
-            };
-
-            if (ShowFill)
-            {
-                paint.Color = SKColors.Red;
-            }
-
-            //canvas.DrawCircle(info.Width / 2, info.Height / 2,100, paint);
-
-            angle += 5;
-            angle %= 100;
-
-            canvas.Save();
-
-            canvas.Translate(info.Width / 2, info.Height / 2);
-            canvas.RotateDegrees(angle);
-
-
-            canvas.DrawLine( 0, 0,0, -120, paint);
-            canvas.Restore();
-            
-
+            if(_stands.Count != 0)
+                _stands.ForEach(st=>st.draw(canvas));
         }
 
         private void TapGestureRecognizer_Tapped(object sender, EventArgs e)

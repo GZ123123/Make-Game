@@ -9,6 +9,8 @@ D:\VS\Make-Game\App1\App1\App1.Android\obj\Debug\81\android\assets\SkiaSharp.Vie
 D:\VS\Make-Game\App1\App1\App1.Android\obj\Debug\81\android\assets\SkiaSharp.Views.Forms.dll
 D:\VS\Make-Game\App1\App1\App1.Android\obj\Debug\81\android\assets\System.Core.dll
 D:\VS\Make-Game\App1\App1\App1.Android\obj\Debug\81\android\assets\System.dll
+D:\VS\Make-Game\App1\App1\App1.Android\obj\Debug\81\android\assets\System.Numerics.dll
+D:\VS\Make-Game\App1\App1\App1.Android\obj\Debug\81\android\assets\System.Numerics.Vectors.dll
 D:\VS\Make-Game\App1\App1\App1.Android\obj\Debug\81\android\assets\System.Xml.dll
 D:\VS\Make-Game\App1\App1\App1.Android\obj\Debug\81\android\assets\System.Xml.Linq.dll
 D:\VS\Make-Game\App1\App1\App1.Android\obj\Debug\81\android\assets\Xamarin.Android.Arch.Core.Common.dll
@@ -19,6 +21,7 @@ D:\VS\Make-Game\App1\App1\App1.Android\obj\Debug\81\android\assets\Xamarin.Andro
 D:\VS\Make-Game\App1\App1\App1.Android\obj\Debug\81\android\assets\Xamarin.Android.Support.Compat.dll
 D:\VS\Make-Game\App1\App1\App1.Android\obj\Debug\81\android\assets\Xamarin.Android.Support.Core.UI.dll
 D:\VS\Make-Game\App1\App1\App1.Android\obj\Debug\81\android\assets\Xamarin.Android.Support.Core.Utils.dll
+D:\VS\Make-Game\App1\App1\App1.Android\obj\Debug\81\android\assets\Xamarin.Android.Support.CustomTabs.dll
 D:\VS\Make-Game\App1\App1\App1.Android\obj\Debug\81\android\assets\Xamarin.Android.Support.Design.dll
 D:\VS\Make-Game\App1\App1\App1.Android\obj\Debug\81\android\assets\Xamarin.Android.Support.Fragment.dll
 D:\VS\Make-Game\App1\App1\App1.Android\obj\Debug\81\android\assets\Xamarin.Android.Support.Media.Compat.dll
@@ -30,13 +33,13 @@ D:\VS\Make-Game\App1\App1\App1.Android\obj\Debug\81\android\assets\Xamarin.Andro
 D:\VS\Make-Game\App1\App1\App1.Android\obj\Debug\81\android\assets\Xamarin.Android.Support.v7.Palette.dll
 D:\VS\Make-Game\App1\App1\App1.Android\obj\Debug\81\android\assets\Xamarin.Android.Support.v7.RecyclerView.dll
 D:\VS\Make-Game\App1\App1\App1.Android\obj\Debug\81\android\assets\Xamarin.Android.Support.Vector.Drawable.dll
+D:\VS\Make-Game\App1\App1\App1.Android\obj\Debug\81\android\assets\Xamarin.Essentials.dll
 D:\VS\Make-Game\App1\App1\App1.Android\obj\Debug\81\android\assets\Xamarin.Forms.Core.dll
 D:\VS\Make-Game\App1\App1\App1.Android\obj\Debug\81\android\assets\Xamarin.Forms.Platform.Android.dll
 D:\VS\Make-Game\App1\App1\App1.Android\obj\Debug\81\android\assets\Xamarin.Forms.Platform.dll
 D:\VS\Make-Game\App1\App1\App1.Android\obj\Debug\81\android\assets\Xamarin.Forms.Xaml.dll
 D:\VS\Make-Game\App1\App1\App1.Android\obj\Debug\81\android\assets\netstandard.dll
 D:\VS\Make-Game\App1\App1\App1.Android\obj\Debug\81\android\assets\System.Data.dll
-D:\VS\Make-Game\App1\App1\App1.Android\obj\Debug\81\android\assets\System.Numerics.dll
 D:\VS\Make-Game\App1\App1\App1.Android\obj\Debug\81\android\assets\System.Transactions.dll
 D:\VS\Make-Game\App1\App1\App1.Android\obj\Debug\81\android\assets\System.IO.Compression.dll
 D:\VS\Make-Game\App1\App1\App1.Android\obj\Debug\81\android\assets\System.IO.Compression.FileSystem.dll
