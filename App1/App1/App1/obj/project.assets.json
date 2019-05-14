@@ -519,11 +519,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\VS\\App1\\App1\\App1\\App1.csproj",
+      "projectUniqueName": "D:\\VS\\Make-Game\\App1\\App1\\App1\\App1.csproj",
       "projectName": "App1",
-      "projectPath": "D:\\VS\\App1\\App1\\App1\\App1.csproj",
+      "projectPath": "D:\\VS\\Make-Game\\App1\\App1\\App1\\App1.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\VS\\App1\\App1\\App1\\obj\\",
+      "outputPath": "D:\\VS\\Make-Game\\App1\\App1\\App1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

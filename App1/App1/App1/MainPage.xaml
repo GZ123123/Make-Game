@@ -5,8 +5,11 @@
              x:Class="App1.MainPage"
              >
     <Grid>
-        <Image Source="background.jpg"></Image>
+        <!--<Image Source="Image/background.jpg"></Image>-->
+        <Image Source="Image/background.jpg" Aspect="AspectFit" />
         <StackLayout>
+            <Image Source="Image/background.jpg" Aspect="AspectFit" />
+            <!--<Image Source="Image/background.jpg"></Image>-->
             <Label Text="Stick Hero" 
            FontSize="54"
            Margin="0, 50,0 ,50"

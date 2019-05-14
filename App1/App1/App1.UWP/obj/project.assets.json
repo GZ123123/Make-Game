@@ -8025,11 +8025,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\VS\\App1\\App1\\App1.UWP\\App1.UWP.csproj",
+      "projectUniqueName": "D:\\VS\\Make-Game\\App1\\App1\\App1.UWP\\App1.UWP.csproj",
       "projectName": "App1.UWP",
-      "projectPath": "D:\\VS\\App1\\App1\\App1.UWP\\App1.UWP.csproj",
+      "projectPath": "D:\\VS\\Make-Game\\App1\\App1\\App1.UWP\\App1.UWP.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\VS\\App1\\App1\\App1.UWP\\obj\\",
+      "outputPath": "D:\\VS\\Make-Game\\App1\\App1\\App1.UWP\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -8049,8 +8049,8 @@
       "frameworks": {
         "uap10.0.16299": {
           "projectReferences": {
-            "D:\\VS\\App1\\App1\\App1\\App1.csproj": {
-              "projectPath": "D:\\VS\\App1\\App1\\App1\\App1.csproj"
+            "D:\\VS\\Make-Game\\App1\\App1\\App1\\App1.csproj": {
+              "projectPath": "D:\\VS\\Make-Game\\App1\\App1\\App1\\App1.csproj"
             }
           }
         }

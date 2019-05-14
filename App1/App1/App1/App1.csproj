@@ -20,21 +20,11 @@
     <EmbeddedResource Update="Game1.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Setting.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
     <EmbeddedResource Update="Play_Page.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Image\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Update="Play_Page.xaml.cs">
-      <DependentUpon>Play_Page.xaml</DependentUpon>
-    </Compile>
+    <EmbeddedResource Update="Setting.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>

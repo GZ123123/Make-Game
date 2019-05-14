@@ -967,11 +967,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\VS\\App1\\App1\\App1.Android\\App1.Android.csproj",
+      "projectUniqueName": "D:\\VS\\Make-Game\\App1\\App1\\App1.Android\\App1.Android.csproj",
       "projectName": "App1.Android",
-      "projectPath": "D:\\VS\\App1\\App1\\App1.Android\\App1.Android.csproj",
+      "projectPath": "D:\\VS\\Make-Game\\App1\\App1\\App1.Android\\App1.Android.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\VS\\App1\\App1\\App1.Android\\obj\\",
+      "outputPath": "D:\\VS\\Make-Game\\App1\\App1\\App1.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -988,8 +988,8 @@
       "frameworks": {
         "monoandroid81": {
           "projectReferences": {
-            "D:\\VS\\App1\\App1\\App1\\App1.csproj": {
-              "projectPath": "D:\\VS\\App1\\App1\\App1\\App1.csproj"
+            "D:\\VS\\Make-Game\\App1\\App1\\App1\\App1.csproj": {
+              "projectPath": "D:\\VS\\Make-Game\\App1\\App1\\App1\\App1.csproj"
             }
           }
         }

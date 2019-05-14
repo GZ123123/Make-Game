@@ -15,7 +15,11 @@ namespace App1
     {
         public MainPage()
         {
+            // BackgroundImage = "image/background.jpg";
+            
             InitializeComponent();
+
+
 
             NavigationPage.SetHasNavigationBar(this, false);
         }
