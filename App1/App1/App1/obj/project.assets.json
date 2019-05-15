@@ -11,6 +11,18 @@
           "lib/netstandard1.0/_._": {}
         }
       },
+      "MR.Gestures/2.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "3.2.0.839982"
+        },
+        "compile": {
+          "lib/netstandard2.0/MR.Gestures.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/MR.Gestures.dll": {}
+        }
+      },
       "NETStandard.Library/2.0.3": {
         "type": "package",
         "dependencies": {
@@ -140,6 +152,31 @@
         "microsoft.netcore.platforms.1.1.0.nupkg.sha512",
         "microsoft.netcore.platforms.nuspec",
         "runtime.json"
+      ]
+    },
+    "MR.Gestures/2.1.0": {
+      "sha512": "6tyC+NXxyrT9JcXCVJPeLVhpwjSnw00eDMFxXO5TEtj02cUWHAUo7h07vhu9ErGMIczIJcJm7du0I+c26lKDpA==",
+      "type": "package",
+      "path": "mr.gestures/2.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid81/MR.Gestures.dll",
+        "lib/MonoAndroid81/MR.Gestures.xml",
+        "lib/Xamarin.iOS10/MR.Gestures.dll",
+        "lib/Xamarin.iOS10/MR.Gestures.xml",
+        "lib/net461/MR.Gestures.dll",
+        "lib/net461/MR.Gestures.xml",
+        "lib/netstandard1.0/MR.Gestures.dll",
+        "lib/netstandard1.0/MR.Gestures.xml",
+        "lib/netstandard2.0/MR.Gestures.dll",
+        "lib/netstandard2.0/MR.Gestures.xml",
+        "lib/uap10.0/MR.Gestures.dll",
+        "lib/uap10.0/MR.Gestures.xml",
+        "lib/xamarinmac20/MR.Gestures.MacOS.dll",
+        "lib/xamarinmac20/MR.Gestures.dll",
+        "mr.gestures.2.1.0.nupkg.sha512",
+        "mr.gestures.nuspec"
       ]
     },
     "NETStandard.Library/2.0.3": {
@@ -378,7 +415,7 @@
       ]
     },
     "System.Numerics.Vectors/4.5.0": {
-      "sha512": "nATsBTD2CKr4AYN6eRszhX4sptImWmBJwB/U6XKCWWfnCcrTBw8XSCm3QA9gjppkHTr8OkXUY21MR91D3QZXsw==",
+      "sha512": "QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
       "type": "package",
       "path": "system.numerics.vectors/4.5.0",
       "files": [
@@ -616,6 +653,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
+      "MR.Gestures >= 2.1.0",
       "NETStandard.Library >= 2.0.3",
       "SkiaSharp >= 1.68.0",
       "SkiaSharp.Views >= 1.68.0",
@@ -665,6 +703,10 @@
     "frameworks": {
       "netstandard2.0": {
         "dependencies": {
+          "MR.Gestures": {
+            "target": "Package",
+            "version": "[2.1.0, )"
+          },
           "NETStandard.Library": {
             "suppressParent": "All",
             "target": "Package",

@@ -15,33 +15,46 @@ namespace App1
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class Play_Page : ContentPage
 	{
-        private List<Stand> _stands;
+        private string p = "asdasdas";
+        private double count = 1;
+        private bool is_long_press = false;
 
-        bool ShowFill = false;
-
-        SKPaint paint = new SKPaint()
-        {
-            Style = SKPaintStyle.Stroke,
-            Color = SKColors.Blue,
-            StrokeWidth = 10
-        };
-
+        private Tree tree;
         public Play_Page ()
 		{
 			InitializeComponent ();
 
-            SKPoint current_pos = new SKPoint(0,200);
+            tree = new Tree(100, App.SCREEN_HEIGHT / 3 * 2, 600);
 
-            _stands = new List<Stand>();
+            SKPaint paint = new SKPaint()
+            {
+                Color = SKColors.Black,
+                IsStroke = true,
+                Style = SKPaintStyle.Stroke,
+            };
 
-            Device.StartTimer(TimeSpan.FromSeconds(5f), () =>
+            //tree.rotation();
+            tree.paint = paint;
+
+            Device.StartTimer(TimeSpan.FromSeconds(1f/60), () =>
               {
-                  current_pos = SKPoint.Add(current_pos, new SKSize(100, 50));
-                  _stands.Add(new Stand(current_pos, paint: paint));
-                  if (_stands.Count > 3) _stands.RemoveAt(0);
-                  canvasView.InvalidateSurface();
+                  ((SKCanvasView)canvasView).InvalidateSurface();
                   return true;
               });
+        }
+
+        void Red_LongPressing(object sender, MR.Gestures.LongPressEventArgs e)
+        {
+            count++;
+            p = count+"LongPressing";
+            is_long_press = true;
+            //((SKCanvasView)canvasView).InvalidateSurface();
+        }
+
+        void Red_LongPressed(object sender, MR.Gestures.LongPressEventArgs e)
+        {
+            p = "LongPressed";
+            is_long_press = false;
         }
 
         private void SKCanvasView_PaintSurface(object sender, SKPaintSurfaceEventArgs e)
@@ -51,13 +64,35 @@ namespace App1
             SKCanvas canvas = surface.Canvas;
 
             canvas.Clear();
-            if(_stands.Count != 0)
-                _stands.ForEach(st=>st.draw(canvas));
+
+            tree.updateHight(1);
+
+            tree.draw(canvas);
+
+            //using (var paint = new SKPaint())
+            //{
+            //    paint.TextSize = 64.0f;
+            //    paint.IsAntialias = true;
+            //    paint.Color = new SKColor(0x42, 0x81, 0xA4);
+            //    paint.IsStroke = false;
+
+            //    if (is_long_press)
+            //    {
+            //        count += 0.01;
+            //        canvas.DrawText(Convert.ToString(count), info.Width / 2, info.Height / 2, paint);
+            //    }
+            //    else
+            //    {
+            //        count = 1;
+            //    }
+            //}
+
+            
         }
 
-        private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
-        {
-            ShowFill ^= true;
-        }
+        //private void BoxView_Swiped(object sender, MR.Gestures.DownUpEventArgs e)
+        //{
+        //    DisplayAlert("Up", "Up", "Ok");
+        //}
     }
 }

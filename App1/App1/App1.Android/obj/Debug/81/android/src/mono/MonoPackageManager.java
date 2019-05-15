@@ -109,6 +109,7 @@ class MonoPackageManager_Resources {
 		"App1.Android.dll",
 		"App1.dll",
 		"FormsViewGroup.dll",
+		"MR.Gestures.dll",
 		"SkiaSharp.dll",
 		"SkiaSharp.Views.Android.dll",
 		"SkiaSharp.Views.Forms.dll",

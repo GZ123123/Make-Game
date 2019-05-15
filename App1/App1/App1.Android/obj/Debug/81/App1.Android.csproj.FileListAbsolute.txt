@@ -161,6 +161,7 @@ D:\VS\Make-Game\App1\App1\App1.Android\bin\Debug\Xamarin.Forms.Core.pdb
 D:\VS\Make-Game\App1\App1\App1.Android\bin\Debug\Xamarin.Forms.Platform.Android.pdb
 D:\VS\Make-Game\App1\App1\App1.Android\bin\Debug\Xamarin.Forms.Xaml.pdb
 D:\VS\Make-Game\App1\App1\App1.Android\bin\Debug\System.Numerics.Vectors.pdb
+D:\VS\Make-Game\App1\App1\App1.Android\bin\Debug\Xamarin.Essentials.dll.mdb
 D:\VS\Make-Game\App1\App1\App1.Android\obj\Debug\81\linksrc\App1.Android.pdb
 D:\VS\Make-Game\App1\App1\App1.Android\obj\Debug\81\linksrc\FormsViewGroup.pdb
 D:\VS\Make-Game\App1\App1\App1.Android\obj\Debug\81\linksrc\Mono.Android.pdb
@@ -184,7 +185,6 @@ D:\VS\Make-Game\App1\App1\App1.Android\obj\Debug\81\linksrc\System.Runtime.Seria
 D:\VS\Make-Game\App1\App1\App1.Android\obj\Debug\81\linksrc\System.ServiceModel.Internals.pdb
 D:\VS\Make-Game\App1\App1\App1.Android\obj\Debug\81\linksrc\System.Web.Services.pdb
 D:\VS\Make-Game\App1\App1\App1.Android\obj\Debug\81\linksrc\Mono.Security.pdb
-D:\VS\Make-Game\App1\App1\App1.Android\bin\Debug\Xamarin.Essentials.dll.mdb
 D:\VS\Make-Game\App1\App1\App1.Android\obj\Debug\81\linksrc\App1.dll.mdb
 D:\VS\Make-Game\App1\App1\App1.Android\obj\Debug\81\linksrc\Xamarin.Essentials.dll.mdb
 D:\VS\Make-Game\App1\App1\App1.Android\obj\Debug\81\android\assets\App1.dll.mdb
@@ -212,7 +212,5 @@ D:\VS\Make-Game\App1\App1\App1.Android\obj\Debug\81\android\assets\System.Xml.pd
 D:\VS\Make-Game\App1\App1\App1.Android\obj\Debug\81\android\assets\Xamarin.Forms.Core.pdb
 D:\VS\Make-Game\App1\App1\App1.Android\obj\Debug\81\android\assets\Xamarin.Forms.Platform.Android.pdb
 D:\VS\Make-Game\App1\App1\App1.Android\obj\Debug\81\android\assets\Xamarin.Forms.Xaml.pdb
-D:\VS\Make-Game\App1\App1\App1\bin\Debug\netstandard2.0\App1.dll
-D:\VS\Make-Game\App1\App1\App1.Android\bin\Debug\App1.dll.mdb
 D:\VS\Make-Game\App1\App1\App1.Android\obj\Debug\81\linksrc\App1.dll.mdb
 D:\VS\Make-Game\App1\App1\App1.Android\obj\Debug\81\linksrc\Xamarin.Essentials.dll.mdb

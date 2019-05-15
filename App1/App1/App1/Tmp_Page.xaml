@@ -5,11 +5,10 @@
              x:Class="App1.Tmp_Page">
     <ContentPage.Content>
         <skia:SKCanvasView x:Name="canvasView"
-            PaintSurface="SKCanvasView_PaintSurface" >
+                PaintSurface="SKCanvasView_PaintSurface" >
             <skia:SKCanvasView.GestureRecognizers>
-                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped">
-
-                </TapGestureRecognizer>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"></TapGestureRecognizer>
+               
             </skia:SKCanvasView.GestureRecognizers>
         </skia:SKCanvasView>
     </ContentPage.Content>

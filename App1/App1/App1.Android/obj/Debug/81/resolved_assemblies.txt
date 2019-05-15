@@ -3,6 +3,7 @@ D:\VS\Make-Game\App1\App1\App1.Android\obj\Debug\81\android\assets\App1.dll
 D:\VS\Make-Game\App1\App1\App1.Android\obj\Debug\81\android\assets\FormsViewGroup.dll
 D:\VS\Make-Game\App1\App1\App1.Android\obj\Debug\81\android\assets\Java.Interop.dll
 D:\VS\Make-Game\App1\App1\App1.Android\obj\Debug\81\android\assets\Mono.Android.dll
+D:\VS\Make-Game\App1\App1\App1.Android\obj\Debug\81\android\assets\MR.Gestures.dll
 D:\VS\Make-Game\App1\App1\App1.Android\obj\Debug\81\android\assets\mscorlib.dll
 D:\VS\Make-Game\App1\App1\App1.Android\obj\Debug\81\android\assets\SkiaSharp.dll
 D:\VS\Make-Game\App1\App1\App1.Android\obj\Debug\81\android\assets\SkiaSharp.Views.Android.dll

@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": "69eb78a9d699c2649ea0af102827a749ef40b1ee"
+    "signature": "05941627cc6c278bcf01b444f653bc6e45630f65"
   },
   "compilationOptions": {},
   "targets": {
@@ -9,6 +9,7 @@
     ".NETStandard,Version=v2.0/": {
       "App1/1.0.0": {
         "dependencies": {
+          "MR.Gestures": "2.1.0",
           "NETStandard.Library": "2.0.3",
           "SkiaSharp": "1.68.0",
           "SkiaSharp.Views": "1.68.0",
@@ -21,6 +22,17 @@
         }
       },
       "Microsoft.NETCore.Platforms/1.1.0": {},
+      "MR.Gestures/2.1.0": {
+        "dependencies": {
+          "Xamarin.Forms": "3.4.0.1008975"
+        },
+        "runtime": {
+          "lib/netstandard2.0/MR.Gestures.dll": {
+            "assemblyVersion": "2.1.0.0",
+            "fileVersion": "2.1.0.0"
+          }
+        }
+      },
       "NETStandard.Library/2.0.3": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0"
@@ -115,6 +127,13 @@
       "path": "microsoft.netcore.platforms/1.1.0",
       "hashPath": "microsoft.netcore.platforms.1.1.0.nupkg.sha512"
     },
+    "MR.Gestures/2.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6tyC+NXxyrT9JcXCVJPeLVhpwjSnw00eDMFxXO5TEtj02cUWHAUo7h07vhu9ErGMIczIJcJm7du0I+c26lKDpA==",
+      "path": "mr.gestures/2.1.0",
+      "hashPath": "mr.gestures.2.1.0.nupkg.sha512"
+    },
     "NETStandard.Library/2.0.3": {
       "type": "package",
       "serviceable": true,
@@ -146,7 +165,7 @@
     "System.Numerics.Vectors/4.5.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-nATsBTD2CKr4AYN6eRszhX4sptImWmBJwB/U6XKCWWfnCcrTBw8XSCm3QA9gjppkHTr8OkXUY21MR91D3QZXsw==",
+      "sha512": "sha512-QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
       "path": "system.numerics.vectors/4.5.0",
       "hashPath": "system.numerics.vectors.4.5.0.nupkg.sha512"
     },

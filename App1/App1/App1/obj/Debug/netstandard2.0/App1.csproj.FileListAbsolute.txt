@@ -27,4 +27,5 @@ D:\VS\Make-Game\App1\App1\App1\obj\Debug\netstandard2.0\App1.AssemblyInfoInputs.
 D:\VS\Make-Game\App1\App1\App1\obj\Debug\netstandard2.0\App1.AssemblyInfo.cs
 D:\VS\Make-Game\App1\App1\App1\obj\Debug\netstandard2.0\App1.dll
 D:\VS\Make-Game\App1\App1\App1\obj\Debug\netstandard2.0\App1.pdb
+D:\VS\Make-Game\App1\App1\App1\obj\Debug\netstandard2.0\Tmp_Page.xaml.g.cs
 D:\VS\Make-Game\App1\App1\App1\obj\Debug\netstandard2.0\XamlC.stamp

@@ -1,16 +1,32 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mr="clr-namespace:MR.Gestures;assembly=MR.Gestures"
              xmlns:skia="clr-namespace:SkiaSharp.Views.Forms;assembly=SkiaSharp.Views.Forms"
              x:Class="App1.Play_Page">
     <ContentPage.Content>
-        <skia:SKCanvasView x:Name="canvasView"
-            PaintSurface="SKCanvasView_PaintSurface" >
-            <skia:SKCanvasView.GestureRecognizers>
-                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped">
-                    
-                </TapGestureRecognizer>
-            </skia:SKCanvasView.GestureRecognizers>
-        </skia:SKCanvasView>
+        <Grid>
+            
+            <!--Graphic Content-->
+            <skia:SKCanvasView x:Name="canvasView"
+                PaintSurface="SKCanvasView_PaintSurface" >
+                <!--<skia:SKCanvasView.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped">
+
+                    </TapGestureRecognizer>
+                </skia:SKCanvasView.GestureRecognizers>-->
+            </skia:SKCanvasView>
+
+            <!--Tap Content-->
+            <mr:BoxView Color="Accent"
+                        Opacity="0.5"
+                        LongPressing="Red_LongPressing"
+                        LongPressed="Red_LongPressed"
+                        LongPressedCommand="{Binding LongPressedCommand}"
+                        LongPressedCommandParameter="Green" />
+        </Grid>
     </ContentPage.Content>
+    <!--<RelativeLayout>
+        
+    </RelativeLayout>-->
 </ContentPage>
