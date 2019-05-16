@@ -23,6 +23,8 @@ namespace App1
         private Tree tree;
         private Rect Crect;
         private Rect Nrect;
+        private Character character;
+
         public Play_Page ()
 		{
 			InitializeComponent ();
@@ -30,6 +32,7 @@ namespace App1
             Crect = new Rect(50, App.SCREEN_HEIGHT / 3 * 2);
             Nrect = new Rect(Crect.Current_pos.X+Crect.Width + 50 + random.Next(10,500), App.SCREEN_HEIGHT / 3 * 2);
             tree = new Tree(100, App.SCREEN_HEIGHT / 3 * 2, 0);
+            character = new Character(100-20-tree.Width/2, App.SCREEN_HEIGHT / 3 * 2-20);
 
             SKPaint paint = new SKPaint()
             {
@@ -43,10 +46,16 @@ namespace App1
                 Color = SKColors.Red
             };
 
+            SKPaint characterPain = new SKPaint()
+            {
+                Color = SKColors.Violet,
+            };
+
             //tree.rotation();
             tree.paint = paint;
             Crect.paint = rpaint;
             Nrect.paint = rpaint;
+            character.paint = characterPain;
 
             Device.StartTimer(TimeSpan.FromSeconds(1f/60), () =>
               {
@@ -91,6 +100,7 @@ namespace App1
             Crect.draw(canvas);
             Nrect.draw(canvas);
             tree.draw(canvas);
+            character.draw(canvas);
 
             using (var paint = new SKPaint())
             {
