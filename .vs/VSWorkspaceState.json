@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\App1",
+    "\\App1\\App1",
+    "\\App1\\App1\\App1",
+    "\\App1\\App1\\App1.UWP",
+    "\\App1\\App1\\App1\\Object"
+  ],
+  "SelectedNode": "\\App1\\App1\\App1\\Object\\Tree.cs",
+  "PreviewInSolutionExplorer": false
+}

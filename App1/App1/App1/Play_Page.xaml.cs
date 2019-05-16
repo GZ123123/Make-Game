@@ -24,7 +24,7 @@ namespace App1
 		{
 			InitializeComponent ();
 
-            tree = new Tree(100, App.SCREEN_HEIGHT / 3 * 2, 600);
+            tree = new Tree(100, App.SCREEN_HEIGHT / 3 * 2, 0);
 
             SKPaint paint = new SKPaint()
             {
@@ -54,6 +54,8 @@ namespace App1
         void Red_LongPressed(object sender, MR.Gestures.LongPressEventArgs e)
         {
             p = "LongPressed";
+            if(is_long_press)
+                tree.rotation();
             is_long_press = false;
         }
 
@@ -64,9 +66,16 @@ namespace App1
             SKCanvas canvas = surface.Canvas;
 
             canvas.Clear();
-
-            tree.updateHight(1);
-
+            if (is_long_press == true)
+            {
+                tree.updateHight(1);
+            }
+                
+            //else if (is_long_press == false)
+            //{
+                
+            //}
+                
             tree.draw(canvas);
 
             //using (var paint = new SKPaint())

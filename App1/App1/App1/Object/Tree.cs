@@ -50,6 +50,10 @@ namespace App1.Object
         public void updateHight(int val)
         {
             _height += val;
+            if (_height > App.SCREEN_HEIGHT/3*2)
+            {
+                _height = 0;
+            }
         }
         private void rotate(SKCanvas canvas)
         {
@@ -57,7 +61,10 @@ namespace App1.Object
             _degrees += Convert.ToInt32(_del += 0.1);
             if (_del > 10) _del = 10;
 
-            if(_degrees >= 90) rotation();
+            if (_degrees >= 90) _degrees = 90;
+
+            if (_degrees >= 90) return;
+
         }
         public void rotation()
         {
