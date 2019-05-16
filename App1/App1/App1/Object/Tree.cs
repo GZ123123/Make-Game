@@ -12,13 +12,13 @@ namespace App1.Object
         private float _width = 7;
 
         public SKPaint paint;
-
         private bool _is_rotate;
         private int _degrees = 0;
         private double _del = 0.1;
 
         public int Degrees { get => _degrees; set => _degrees = value; }
         public float Height { get => _height; set => _height = value; }
+        public bool Is_rotate { get => _is_rotate; set => _is_rotate = value; }
 
         public Tree(SKPoint start_from,float height)
         {
@@ -74,6 +74,7 @@ namespace App1.Object
             _is_rotate = true;
             _degrees = 0;
             _del = 1;
+            //_start_from = new SKPoint(this._start_from.X,this._start_from.Y-4);
         }
 
     }

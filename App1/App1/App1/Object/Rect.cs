@@ -13,6 +13,9 @@ namespace App1.Object
 
         public SKPaint paint;
 
+        public SKPoint Current_pos { get => _current_pos; set => _current_pos = value; }
+        public int Width { get => _width; set => _width = value; }
+
         public Rect(SKPoint start_from,int width = 100,int height = 100, SKPaint paint = null)
         {
             _current_pos = start_from;
