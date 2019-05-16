@@ -57,6 +57,8 @@ namespace App1
             if(is_long_press)
                 tree.rotation();
             is_long_press = false;
+            //if (tree.Degrees == 90)
+               
         }
 
         private void SKCanvasView_PaintSurface(object sender, SKPaintSurfaceEventArgs e)
@@ -78,26 +80,27 @@ namespace App1
                 
             tree.draw(canvas);
 
-            //using (var paint = new SKPaint())
-            //{
-            //    paint.TextSize = 64.0f;
-            //    paint.IsAntialias = true;
-            //    paint.Color = new SKColor(0x42, 0x81, 0xA4);
-            //    paint.IsStroke = false;
+            using (var paint = new SKPaint())
+            {
+                paint.TextSize = 64.0f;
+                paint.IsAntialias = true;
+                paint.Color = new SKColor(0x42, 0x81, 0xA4);
+                paint.IsStroke = false;
 
-            //    if (is_long_press)
-            //    {
-            //        count += 0.01;
-            //        canvas.DrawText(Convert.ToString(count), info.Width / 2, info.Height / 2, paint);
-            //    }
-            //    else
-            //    {
-            //        count = 1;
-            //    }
-            //}
-
-            
+                if (is_long_press)
+            {
+                count += 0.01;
+                count = tree.Height;
+                canvas.DrawText(Convert.ToString(count), info.Width/(2.3f), info.Height / 10, paint);
+            }
+            else
+            {
+                count = 1;
+            }
         }
+
+
+    }
 
         //private void BoxView_Swiped(object sender, MR.Gestures.DownUpEventArgs e)
         //{

@@ -16,7 +16,10 @@ namespace App1.Object
         private bool _is_rotate;
         private int _degrees = 0;
         private double _del = 0.1;
-        
+
+        public int Degrees { get => _degrees; set => _degrees = value; }
+        public float Height { get => _height; set => _height = value; }
+
         public Tree(SKPoint start_from,float height)
         {
             _start_from = start_from;
