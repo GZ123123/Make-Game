@@ -37,6 +37,12 @@ namespace App1.Object
         {
             _current_pos = new_pos;
         }
+
+        public virtual void moveTo(Rect to)
+        {
+            _current_pos = to._current_pos;
+        }
+
         /* 
          * lùi x xuống 10 đơn vị
          * del(-10,0);

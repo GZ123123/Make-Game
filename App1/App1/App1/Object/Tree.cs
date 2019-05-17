@@ -20,6 +20,7 @@ namespace App1.Object
         public float Height { get => _height; set => _height = value; }
         public bool Is_rotate { get => _is_rotate; set => _is_rotate = value; }
         public float Width { get => _width; set => _width = value; }
+        public SKPoint Start_from { get => _start_from; set => _start_from = value; }
 
         public Tree(SKPoint start_from,float height)
         {
@@ -30,6 +31,18 @@ namespace App1.Object
         {
             _start_from = new SKPoint(x,y);
             _height = height;
+        }
+
+        public Tree(Tree tree)
+        {
+            _start_from = tree._start_from;
+            _height = tree._height;
+            _width = tree._width;
+
+            paint = tree.paint;
+            _is_rotate = tree._is_rotate;
+            _degrees = tree._degrees;
+            _del = tree._del;
         }
 
         public void draw(SKCanvas canvas)
@@ -54,6 +67,7 @@ namespace App1.Object
         // look like đạt
         public void updateHight(int val)
         {
+            if (Play_Page.fall == true) return;
             _height += val;
             if (_height > App.SCREEN_HEIGHT/3*2)
             {
@@ -81,6 +95,7 @@ namespace App1.Object
         }
         public void rotation()
         {
+            if (Play_Page.fall == true) return;
             _is_rotate = true;
             _degrees = 0;
             _del = 1;

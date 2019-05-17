@@ -37,6 +37,7 @@ namespace App1.Object
         {
             _current_pos = new_pos;
         }
+        
         /* 
          * lùi x xuống 10 đơn vị
          * del(-10,0);
