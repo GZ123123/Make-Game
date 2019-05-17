@@ -16,16 +16,18 @@ namespace App1
 	public partial class Play_Page : ContentPage
 	{
         public static  bool fall = false;
-        private string p = "asdasdas";
+        private string p = "";
         private double count = 1;
         private bool is_long_press = false;
-        
 
+        private List<Tree> trees = new List<Tree>();
         private Tree tree;
+
+        private List<Rect> rects = new List<Rect>();
         private Rect Crect;
         private Rect Nrect;
-        private Character character;
 
+        private Character character;
         public Play_Page ()
 		{
 			InitializeComponent ();
@@ -35,34 +37,35 @@ namespace App1
             tree = new Tree(100, App.SCREEN_HEIGHT / 3 * 2, 0);
             character = new Character(100-20-tree.Width/2, App.SCREEN_HEIGHT / 3 * 2-20);
 
-            SKPaint paint = new SKPaint()
-            {
+            SKPaint paint = new SKPaint() {
                 Color = SKColors.Black,
                 IsStroke = true,
                 Style = SKPaintStyle.Stroke,
             };
 
-            SKPaint rpaint = new SKPaint()
-            {
+            SKPaint rpaint = new SKPaint() {
                 Color = SKColors.Red
             };
 
-            SKPaint characterPain = new SKPaint()
-            {
+            SKPaint characterPain = new SKPaint() {
                 Color = SKColors.Violet,
             };
 
-            //tree.rotation();
             tree.paint = paint;
             Crect.paint = rpaint;
             Nrect.paint = rpaint;
             character.paint = characterPain;
 
+            var _  = new MoveObject(Nrect);
+            _.container = rects;
+
+            rects.Add(new Rect(Crect.Current_pos.X + Crect.Width + 50 + random.Next(10, 500), App.SCREEN_HEIGHT / 3 * 2));
+
             Device.StartTimer(TimeSpan.FromSeconds(1f/60), () =>
-              {
-                  ((SKCanvasView)canvasView).InvalidateSurface();
-                  return true;
-              });
+            {
+                ((SKCanvasView)canvasView).InvalidateSurface();
+                return true;
+            });
         }
 
         void Red_LongPressing(object sender, MR.Gestures.LongPressEventArgs e)
@@ -70,7 +73,6 @@ namespace App1
             count++;
             p = count+"LongPressing";
             is_long_press = true;
-            //((SKCanvasView)canvasView).InvalidateSurface();
         }
 
         void Red_LongPressed(object sender, MR.Gestures.LongPressEventArgs e)
@@ -78,12 +80,7 @@ namespace App1
             p = "LongPressed";
             if(is_long_press)
                 tree.rotation();
-            is_long_press = false;
-
-
-            if (tree.Degrees >= 80 && tree.Is_rotate == true)
-                Crect.moveTo(new SKPoint(50,50));
-            
+            is_long_press = false;            
         }
 
         private void SKCanvasView_PaintSurface(object sender, SKPaintSurfaceEventArgs e)
@@ -99,41 +96,12 @@ namespace App1
             }
             if (fall)
             {
-                Crect.moveTo(new SKPoint(300, 50));
-                Nrect.moveTo(new SKPoint(50, 50));
-                tree.moveTo(new SKPoint(50, 50));
                 fall = false;
             }
             Crect.draw(canvas);
             Nrect.draw(canvas);
             tree.draw(canvas);
             character.draw(canvas);
-
-            using (var paint = new SKPaint())
-            {
-                paint.TextSize = 64.0f;
-                paint.IsAntialias = true;
-                paint.Color = new SKColor(0x42, 0x81, 0xA4);
-                paint.IsStroke = false;
-
-                if (is_long_press)
-            {
-                count += 0.01;
-                count = tree.Height;
-                canvas.DrawText(Convert.ToString(count), info.Width/(2.3f), info.Height / 10, paint);
-            }
-                else
-                {
-                    count = 1;
-                }
         }
-
-
-    }
-
-        //private void BoxView_Swiped(object sender, MR.Gestures.DownUpEventArgs e)
-        //{
-        //    DisplayAlert("Up", "Up", "Ok");
-        //}
     }
 }

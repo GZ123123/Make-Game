@@ -8,7 +8,5 @@ namespace App1.Object
     interface IDrawableObject
     {
         void draw(SKCanvas canvas);
-
-        
     }
 }

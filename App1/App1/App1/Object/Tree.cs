@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using App1.Inteface;
 using SkiaSharp;
 
 namespace App1.Object
 {
-    class Tree : IDrawableObject
+    class Tree : IObject
     {
         private SKPoint _start_from;
         private float _height;
@@ -31,6 +32,15 @@ namespace App1.Object
             _start_from = new SKPoint(x,y);
             _height = height;
         }
+        public Tree(Tree tree)
+        {
+            _start_from = tree._start_from;
+            _height = tree._height;
+            _width = tree._width;
+            _degrees = tree._degrees;
+
+            paint = tree.paint;
+        }
 
         public void draw(SKCanvas canvas)
         {
@@ -39,11 +49,9 @@ namespace App1.Object
             canvas.Save();
 
             canvas.Translate(_start_from);
-            // rotation 
+
             if (_is_rotate && rotate(canvas))
-            {
                 Play_Page.fall = true;
-            }
 
             SKPoint zero = new SKPoint(0, 0);
             canvas.DrawLine(zero, SKPoint.Subtract(zero, new SKSize(0, _height)), paint);
@@ -66,6 +74,11 @@ namespace App1.Object
             _start_from = new_pos;
         }
 
+        public void translateTo(SKPoint del)
+        {
+            throw new NotImplementedException();
+        }
+
         private bool rotate(SKCanvas canvas)
         {
             canvas.RotateDegrees(_degrees);
@@ -86,6 +99,5 @@ namespace App1.Object
             _del = 1;
             //_start_from = new SKPoint(this._start_from.X,this._start_from.Y-4);
         }
-
     }
 }

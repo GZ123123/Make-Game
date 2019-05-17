@@ -6,8 +6,8 @@ using SkiaSharp;
 
 namespace App1.Object
 {
-    interface ILine
+    interface IMovableObject : IDrawableObject
     {
-        
+        void translate();
     }
 }

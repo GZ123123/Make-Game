@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using App1.Inteface;
 using SkiaSharp;
 
 namespace App1.Object
 {
-    class Rect : IDrawableObject
+    class Rect : IObject
     {
         private SKPoint _current_pos;
         private int _width;
