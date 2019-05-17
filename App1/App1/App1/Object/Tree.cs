@@ -37,13 +37,14 @@ namespace App1.Object
             if (paint.StrokeWidth == 0) paint.StrokeWidth = _width;
 
             canvas.Save();
-            
+
             canvas.Translate(_start_from);
             // rotation 
-            if (_is_rotate)
+            if (_is_rotate && rotate(canvas))
             {
-                rotate(canvas);
+                Play_Page.fall = true;
             }
+
             SKPoint zero = new SKPoint(0, 0);
             canvas.DrawLine(zero, SKPoint.Subtract(zero, new SKSize(0, _height)), paint);
 
@@ -59,7 +60,13 @@ namespace App1.Object
                 _height = 0;
             }
         }
-        private void rotate(SKCanvas canvas)
+
+        public virtual void moveTo(SKPoint new_pos)
+        {
+            _start_from = new_pos;
+        }
+
+        private bool rotate(SKCanvas canvas)
         {
             canvas.RotateDegrees(_degrees);
             _degrees += Convert.ToInt32(_del += 0.1);
@@ -67,7 +74,9 @@ namespace App1.Object
 
             if (_degrees >= 90) _degrees = 90;
 
-            if (_degrees >= 90) return;
+            if (_degrees >= 90) return true;
+
+            return false;
 
         }
         public void rotation()

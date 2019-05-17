@@ -15,6 +15,7 @@ namespace App1
     [XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class Play_Page : ContentPage
 	{
+        public static  bool fall = false;
         private string p = "asdasdas";
         private double count = 1;
         private bool is_long_press = false;
@@ -92,11 +93,17 @@ namespace App1
             SKCanvas canvas = surface.Canvas;
 
             canvas.Clear();
-            if (is_long_press == true)
+            if (is_long_press)
             {
                 tree.updateHight(1);
             }
-            
+            if (fall)
+            {
+                Crect.moveTo(new SKPoint(300, 50));
+                Nrect.moveTo(new SKPoint(50, 50));
+                tree.moveTo(new SKPoint(50, 50));
+                fall = false;
+            }
             Crect.draw(canvas);
             Nrect.draw(canvas);
             tree.draw(canvas);
