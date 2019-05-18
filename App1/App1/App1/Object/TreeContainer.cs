@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Linq;
 
 namespace App1.Object
 {
@@ -10,6 +11,9 @@ namespace App1.Object
         {
             _object = new List<Tree>();
         }
+
+        public Tree Last => _object.LastOrDefault();
+
         // gọi Rotation => thằng cuối cùng rotate
         public void rotation()
         {

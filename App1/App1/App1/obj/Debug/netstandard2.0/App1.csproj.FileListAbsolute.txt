@@ -48,11 +48,9 @@ C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1\b
 C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1\bin\Debug\netstandard2.0\App1.pdb
 C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1\obj\Debug\netstandard2.0\App1.csprojAssemblyReference.cache
 C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1\obj\Debug\netstandard2.0\App.xaml.g.cs
-C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1\obj\Debug\netstandard2.0\Game1.xaml.g.cs
 C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
 C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1\obj\Debug\netstandard2.0\Play_Page.xaml.g.cs
 C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1\obj\Debug\netstandard2.0\Setting.xaml.g.cs
-C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1\obj\Debug\netstandard2.0\Tmp_Page.xaml.g.cs
 C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1\obj\Debug\netstandard2.0\App1.csproj.CoreCompileInputs.cache
 C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1\obj\Debug\netstandard2.0\App1.AssemblyInfoInputs.cache
 C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1\obj\Debug\netstandard2.0\App1.AssemblyInfo.cs

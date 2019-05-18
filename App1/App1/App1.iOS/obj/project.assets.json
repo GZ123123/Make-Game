@@ -1269,21 +1269,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {}
+    "C:\\Users\\Minh Duy\\.nuget\\packages\\": {},
+    "C:\\ProgramData\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\VS\\Make-Game\\App1\\App1\\App1.iOS\\App1.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\Minh Duy\\Desktop\\MyDesk\\Mobile\\Project\\Final\\Make-Game\\App1\\App1\\App1.iOS\\App1.iOS.csproj",
       "projectName": "App1.iOS",
-      "projectPath": "D:\\VS\\Make-Game\\App1\\App1\\App1.iOS\\App1.iOS.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\VS\\Make-Game\\App1\\App1\\App1.iOS\\obj\\",
+      "projectPath": "C:\\Users\\Minh Duy\\Desktop\\MyDesk\\Mobile\\Project\\Final\\Make-Game\\App1\\App1\\App1.iOS\\App1.iOS.csproj",
+      "packagesPath": "C:\\Users\\Minh Duy\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Minh Duy\\Desktop\\MyDesk\\Mobile\\Project\\Final\\Make-Game\\App1\\App1\\App1.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
+      "fallbackFolders": [
+        "C:\\ProgramData\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Minh Duy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "xamarinios10"
@@ -1295,8 +1300,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "D:\\VS\\Make-Game\\App1\\App1\\App1\\App1.csproj": {
-              "projectPath": "D:\\VS\\Make-Game\\App1\\App1\\App1\\App1.csproj"
+            "C:\\Users\\Minh Duy\\Desktop\\MyDesk\\Mobile\\Project\\Final\\Make-Game\\App1\\App1\\App1\\App1.csproj": {
+              "projectPath": "C:\\Users\\Minh Duy\\Desktop\\MyDesk\\Mobile\\Project\\Final\\Make-Game\\App1\\App1\\App1\\App1.csproj"
             }
           }
         }

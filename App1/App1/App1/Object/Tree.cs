@@ -21,6 +21,7 @@ namespace App1.Object
         public float Height { get => _height; set => _height = value; }
         public bool Is_rotate { get => _is_rotate; set => _is_rotate = value; }
         public float Width { get => _width; set => _width = value; }
+        public SKPoint Start_from { get => _start_from; set => _start_from = value; }
 
         public Tree(SKPoint start_from,float height)
         {
@@ -79,7 +80,7 @@ namespace App1.Object
 
         public void translateTo(SKPoint del)
         {
-            throw new NotImplementedException();
+            _start_from = SKPoint.Add(_start_from, del);
         }
 
         private bool rotate(SKCanvas canvas)
