@@ -15,39 +15,90 @@ namespace App1
     [XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class Play_Page : ContentPage
 	{
+        #region public
         public static  bool fall = false;
+        #endregion
+
+        #region private
         private string p = "";
         private double count = 1;
         private bool is_long_press = false;
+        // Paints
+        private Random random = new Random();
 
-        private List<Tree> trees = new List<Tree>();
+
+        SKPaint rpaint;
+
+
+
+        // draw trees not tree
         private Tree tree;
 
-        private List<Rect> rects = new List<Rect>();
-        private Rect Crect;
-        private Rect Nrect;
+        // draw rects not rect
+        //private Rect Crect;
+        //private Rect Nrect;
+        private Stand Crect;
+        private Stand Nrect;
 
+        // draw moveObjects 
+        private List<MoveObject> moveObjects = new List<MoveObject>();
+
+        // Container
+        //private ObjectContainer<Rect> rects = new ObjectContainer<Rect>();
+        private StandContainer stands = new StandContainer();
+        private TreeContainer trees = new TreeContainer();
+
+        // draw character
         private Character character;
+        #endregion
         public Play_Page ()
 		{
 			InitializeComponent ();
-            Random random = new Random();
-            Crect = new Rect(50, App.SCREEN_HEIGHT / 3 * 2);
-            Nrect = new Rect(Crect.Current_pos.X+Crect.Width + 50 + random.Next(10,500), App.SCREEN_HEIGHT / 3 * 2);
-            tree = new Tree(100, App.SCREEN_HEIGHT / 3 * 2, 0);
-            character = new Character(100-20-tree.Width/2, App.SCREEN_HEIGHT / 3 * 2-20);
+            setUp();
 
-            SKPaint paint = new SKPaint() {
+            //rects.add(Crect);
+            //rects.add(Nrect);
+
+            stands.add(Crect);
+            stands.add(Nrect);
+
+            // test: remove Object from container
+            //var __ = rects.remove(0);
+
+            //rects.add(__);
+            // end test
+            trees.add(new Tree(tree));
+            // Frame 
+            Device.StartTimer(TimeSpan.FromSeconds(1f/60), () =>
+            {
+                ((SKCanvasView)canvasView).InvalidateSurface();
+                return true;
+            });
+
+        }
+
+        #region Set_UP
+        void setUp()
+        {
+            Crect = new Stand(50, App.SCREEN_HEIGHT / 3 * 2);
+            Nrect = new Stand(Crect.Current_pos.X + Crect.Width + 50 + random.Next(10, 500), App.SCREEN_HEIGHT / 3 * 2);
+            tree = new Tree(100, App.SCREEN_HEIGHT / 3 * 2, 0);
+            character = new Character(100 - tree.Width / 2, App.SCREEN_HEIGHT / 3 * 2);
+
+            SKPaint paint = new SKPaint()
+            {
                 Color = SKColors.Black,
                 IsStroke = true,
                 Style = SKPaintStyle.Stroke,
             };
 
-            SKPaint rpaint = new SKPaint() {
+            rpaint = new SKPaint()
+            {
                 Color = SKColors.Red
             };
 
-            SKPaint characterPain = new SKPaint() {
+            SKPaint characterPain = new SKPaint()
+            {
                 Color = SKColors.Violet,
             };
 
@@ -55,19 +106,10 @@ namespace App1
             Crect.paint = rpaint;
             Nrect.paint = rpaint;
             character.paint = characterPain;
-
-            var _  = new MoveObject(Nrect);
-            _.container = rects;
-
-            rects.Add(new Rect(Crect.Current_pos.X + Crect.Width + 50 + random.Next(10, 500), App.SCREEN_HEIGHT / 3 * 2));
-
-            Device.StartTimer(TimeSpan.FromSeconds(1f/60), () =>
-            {
-                ((SKCanvasView)canvasView).InvalidateSurface();
-                return true;
-            });
         }
+        #endregion
 
+        #region Method
         void Red_LongPressing(object sender, MR.Gestures.LongPressEventArgs e)
         {
             count++;
@@ -79,29 +121,42 @@ namespace App1
         {
             p = "LongPressed";
             if(is_long_press)
-                tree.rotation();
+                trees.rotation();
             is_long_press = false;            
         }
+        #endregion
 
+        #region Update
         private void SKCanvasView_PaintSurface(object sender, SKPaintSurfaceEventArgs e)
         {
+            // set up environment
             SKImageInfo info = e.Info;
             SKSurface surface = e.Surface;
             SKCanvas canvas = surface.Canvas;
 
             canvas.Clear();
-            if (is_long_press)
-            {
-                tree.updateHight(1);
-            }
-            if (fall)
-            {
+            // logic 
+            if (is_long_press) trees.updateHeight(4);
+            if (fall) {
+
+                NextMove();
                 fall = false;
             }
-            Crect.draw(canvas);
-            Nrect.draw(canvas);
-            tree.draw(canvas);
+
+            // draw Object;
+            stands.draw(canvas);
+
+            trees.draw(canvas);
+            
             character.draw(canvas);
         }
+
+        private void NextMove()
+        {
+            trees.add(new Tree(tree));
+            stands.add(new Stand(Crect.Current_pos.X + Crect.Width + 50 + random.Next(10, 500), App.SCREEN_HEIGHT / 3 * 2, paint:rpaint));
+            if (trees.Count > 5) trees.remove(0, 3);
+        }
+        #endregion
     }
 }

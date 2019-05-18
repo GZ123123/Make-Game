@@ -20,7 +20,6 @@ namespace App1.Droid
     {
         public void closeApplication()
         {
-
             var activity = (Activity)Forms.Context;
             activity.FinishAffinity();
         }

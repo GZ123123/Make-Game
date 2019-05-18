@@ -19,7 +19,7 @@ namespace App1
 
             ////MainPage = new NavigationPage( new MainPage() );
 
-            //MainPage = new Tmp_Page();
+            //MainPage = new MainPage();
 
             MainPage = new Play_Page();
 

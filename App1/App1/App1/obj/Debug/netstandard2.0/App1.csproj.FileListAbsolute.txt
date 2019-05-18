@@ -18,7 +18,6 @@ D:\VS\Make-Game\App1\App1\App1\bin\Debug\netstandard2.0\App1.dll
 D:\VS\Make-Game\App1\App1\App1\bin\Debug\netstandard2.0\App1.pdb
 D:\VS\Make-Game\App1\App1\App1\obj\Debug\netstandard2.0\App1.csprojAssemblyReference.cache
 D:\VS\Make-Game\App1\App1\App1\obj\Debug\netstandard2.0\App.xaml.g.cs
-D:\VS\Make-Game\App1\App1\App1\obj\Debug\netstandard2.0\Game1.xaml.g.cs
 D:\VS\Make-Game\App1\App1\App1\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
 D:\VS\Make-Game\App1\App1\App1\obj\Debug\netstandard2.0\Play_Page.xaml.g.cs
 D:\VS\Make-Game\App1\App1\App1\obj\Debug\netstandard2.0\Setting.xaml.g.cs
@@ -27,7 +26,6 @@ D:\VS\Make-Game\App1\App1\App1\obj\Debug\netstandard2.0\App1.AssemblyInfoInputs.
 D:\VS\Make-Game\App1\App1\App1\obj\Debug\netstandard2.0\App1.AssemblyInfo.cs
 D:\VS\Make-Game\App1\App1\App1\obj\Debug\netstandard2.0\App1.dll
 D:\VS\Make-Game\App1\App1\App1\obj\Debug\netstandard2.0\App1.pdb
-D:\VS\Make-Game\App1\App1\App1\obj\Debug\netstandard2.0\Tmp_Page.xaml.g.cs
 D:\VS\Make-Game\App1\App1\App1\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Make-Game\App1\App1\App1\bin\Debug\netstandard2.0\App1.deps.json
 C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Make-Game\App1\App1\App1\bin\Debug\netstandard2.0\App1.dll

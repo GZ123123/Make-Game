@@ -50,8 +50,12 @@ namespace App1.Object
 
             canvas.Translate(_start_from);
 
-            if (_is_rotate && rotate(canvas))
+            if (_is_rotate && rotate(canvas)) {
+                _is_rotate = false;
                 Play_Page.fall = true;
+            } else if(!_is_rotate && _degrees >= 90) {
+                canvas.RotateDegrees(_degrees);
+            }
 
             SKPoint zero = new SKPoint(0, 0);
             canvas.DrawLine(zero, SKPoint.Subtract(zero, new SKSize(0, _height)), paint);
@@ -59,8 +63,7 @@ namespace App1.Object
             canvas.Restore();
         }
 
-        // look like đạt
-        public void updateHight(int val)
+        public void updateHeight(int val)
         {
             _height += val;
             if (_height > App.SCREEN_HEIGHT/3*2)

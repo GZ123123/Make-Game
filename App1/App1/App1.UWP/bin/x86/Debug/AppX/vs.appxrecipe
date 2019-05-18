@@ -30,13 +30,13 @@
     <AppXManifest Include="D:\VS\Make-Game\App1\App1\App1.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-05-17T16:51:32.770</Modified>
+      <Modified>2019-05-18T05:08:21.434</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\VS\Make-Game\App1\App1\App1.UWP\bin\x86\Debug\App1.UWP.exe">
       <PackagePath>entrypoint\App1.UWP.exe</PackagePath>
-      <Modified>2019-05-17T16:51:31.894</Modified>
+      <Modified>2019-05-18T05:08:20.512</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\mr.gestures\2.1.0\lib\uap10.0\MR.Gestures.dll">
       <PackagePath>MR.Gestures.dll</PackagePath>
@@ -748,7 +748,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VS\Make-Game\App1\App1\App1\bin\Debug\netstandard2.0\App1.dll">
       <PackagePath>App1.dll</PackagePath>
-      <Modified>2019-05-17T16:51:20.513</Modified>
+      <Modified>2019-05-18T05:08:13.312</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VS\Make-Game\App1\App1\App1.UWP\Assets\LargeTile.scale-100.png">
       <PackagePath>Assets\LargeTile.scale-100.png</PackagePath>
@@ -895,11 +895,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VS\Make-Game\App1\App1\App1.UWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2019-05-17T16:51:31.566</Modified>
+      <Modified>2019-05-18T05:08:20.261</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VS\Make-Game\App1\App1\App1.UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2019-05-17T16:51:31.566</Modified>
+      <Modified>2019-05-18T05:08:20.261</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -911,11 +911,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VS\Make-Game\App1\App1\App1.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2019-05-17T14:00:42.796</Modified>
+      <Modified>2019-05-18T02:34:23.345</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VS\Make-Game\App1\App1\App1.UWP\bin\x86\Debug\Core\App1.UWP.exe">
       <PackagePath>App1.UWP.exe</PackagePath>
-      <Modified>2019-05-17T16:51:32.761</Modified>
+      <Modified>2019-05-18T05:08:21.422</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

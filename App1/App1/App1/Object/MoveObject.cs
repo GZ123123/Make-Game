@@ -14,10 +14,11 @@ namespace App1.Object
 
         public MoveObject(object copy_object)
         {
-            _type = copy_object.GetType();
-
-            var __ = Convert.ChangeType(copy_object, _type);
-            var _ = Helper.MyCast<_type>(_object);
+            if (copy_object != null) { 
+                _type = copy_object.GetType();
+                _object = copy_object;
+                var __ = Convert.ChangeType(copy_object, _type);
+            }
         }
 
         public void translate()

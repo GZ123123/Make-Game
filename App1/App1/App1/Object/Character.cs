@@ -16,16 +16,16 @@ namespace App1.Object
         public SKPoint Current_pos { get => _current_pos; set => _current_pos = value; }
         public int Width { get => _width; set => _width = value; }
 
-        public Character(SKPoint start_from, int width = 20, int height = 20, SKPaint paint = null)
+        public Character(SKPoint start_from, int width = 40, int height = 50, SKPaint paint = null)
         {
-            _current_pos = start_from;
+            _current_pos = new SKPoint( start_from.X -width,start_from.Y - height);
             _width = width;
             _height = height;
             this.paint = paint;
         }
-        public Character(float x, float y, int width = 20, int height = 20, SKPaint paint = null)
+        public Character(float x, float y, int width = 25, int height = 40, SKPaint paint = null)
         {
-            _current_pos = new SKPoint(x, y);
+            _current_pos = new SKPoint(x - width, y - height);
             _width = width;
             _height = height;
             this.paint = paint;
