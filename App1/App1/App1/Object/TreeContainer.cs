@@ -13,6 +13,7 @@ namespace App1.Object
         }
 
         public Tree Last => _object.LastOrDefault();
+        public Tree secondLast => (_object.Count > 1) ? _object[_object.Count - 2] : null;
 
         // gọi Rotation => thằng cuối cùng rotate
         public void rotation()

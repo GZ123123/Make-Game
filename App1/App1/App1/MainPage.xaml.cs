@@ -8,6 +8,8 @@ using Xamarin.Forms;
 using SkiaSharp;
 using SkiaSharp.Views;
 using SkiaSharp.Views.Forms;
+using System.Reflection;
+using System.IO;
 
 namespace App1
 {
@@ -36,6 +38,24 @@ namespace App1
         async void Setting_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new Setting());
+        }
+
+        void SKCanvasView_PaintSurface(object sender, SKPaintSurfaceEventArgs e)
+        {
+            SKImageInfo info = e.Info;
+            SKSurface surface = e.Surface;
+            SKCanvas canvas = surface.Canvas;
+
+            SKRect rect = SKRect.Create(0, 0, info.Width, info.Height);
+
+            // load bitmap
+            Assembly assembly = GetType().GetTypeInfo().Assembly;
+            using (Stream stream = assembly.GetManifestResourceStream("App1.Media.background02.png"))
+            {
+                SKBitmap CharactorBitsMap = SKBitmap.Decode(stream);
+                canvas.DrawBitmap(CharactorBitsMap, rect);
+
+            }
         }
     }
 }

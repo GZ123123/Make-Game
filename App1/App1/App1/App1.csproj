@@ -13,12 +13,16 @@
 
   <ItemGroup>
     <None Remove="Media\background.jpg" />
+    <None Remove="Media\background01.jpg" />
+    <None Remove="Media\background02.png" />
     <None Remove="Media\charactor.png" />
     <None Remove="Media\monkey.png" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="Media\background.jpg" />
+    <EmbeddedResource Include="Media\background01.jpg" />
+    <EmbeddedResource Include="Media\background02.png" />
     <EmbeddedResource Include="Media\charactor.png" />
     <EmbeddedResource Include="Media\monkey.png" />
   </ItemGroup>

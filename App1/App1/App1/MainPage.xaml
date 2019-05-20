@@ -2,35 +2,38 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:App1"
+             xmlns:skia="clr-namespace:SkiaSharp.Views.Forms;assembly=SkiaSharp.Views.Forms"
              x:Class="App1.MainPage"
              >
     <Grid>
-        <!--<Image Source="Image/background.jpg"></Image>-->
+        <skia:SKCanvasView x:Name="canvasView"
+                PaintSurface="SKCanvasView_PaintSurface" >
+        </skia:SKCanvasView>
         <StackLayout>
-            <Image Source="Media/background.jpg" Aspect="AspectFit" />
-            <!--<Image Source="Image/background.jpg"></Image>-->
             <Label Text="Stick Hero" 
-           FontSize="54"
-           Margin="0, 50,0 ,50"
-           HorizontalOptions="Center"
-           VerticalOptions="Center" />
+                   TextColor="Red"
+                   FontSize="54"
+                   Margin="0, 50,0 ,50"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center" />
             <Button Text="Start Game"
-                TextColor="Black"
-                BorderWidth="1"
-                Clicked="Start_Clicked"
-                BorderRadius="20"
-                ></Button>
+                    TextColor="Black"
+                    BackgroundColor="Gray"
+                    BorderWidth="1"
+                    Clicked="Start_Clicked"
+                    BorderRadius="20"></Button>
             <Button Text="Setting"
-                TextColor="Black"
-                BorderWidth="1"
-                BorderRadius="20"
-                Clicked="Setting_Clicked"
-                ></Button>
+                    TextColor="Black"
+                    BackgroundColor="Gray"
+                    BorderWidth="1"
+                    BorderRadius="20"
+                    Clicked="Setting_Clicked"></Button>
             <Button Text="Exit"
-                TextColor="Black"
-                BorderWidth="1"
-                Clicked="Exit_Clicked"
-                BorderRadius="20"></Button>
+                    TextColor="Black"
+                    BackgroundColor="Gray"
+                    BorderWidth="1"
+                    Clicked="Exit_Clicked"
+                    BorderRadius="20"></Button>
         </StackLayout>
     </Grid>
 </ContentPage>

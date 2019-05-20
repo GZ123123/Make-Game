@@ -57,29 +57,15 @@ namespace App1
         public Play_Page ()
 		{
 			InitializeComponent ();
+
+            NavigationPage.SetHasNavigationBar(this, false);
+
             setUp();
             fall = false;
 
-
-
-            //rects.add(Crect);
-            //rects.add(Nrect);
-
             stands.add(Crect);
             stands.add(Nrect);
-            // return Object from move
-
-            //MoveObject<Stand> moveStand = new MoveObject<Stand>(stands.Last);
-
-            //movables.Add(moveStand);
-            //moveStand.container = stands;
-            //moveStand.add();
-            
-
-            // test: remove Object from container
-            //var __ = rects.remove(0);
-
-            //rects.add(__);
+           
             // end test
             trees.add(new Tree(tree));
             // Frame 
@@ -158,13 +144,13 @@ namespace App1
                     trees.Last.moveTo(new SKPoint(trees.Last.Start_from.X, trees.Last.Start_from.Y + -trees.Last.Width / 2));
                     tus = 0;
                 }
-                if (updown < tree.Width && tus == 0)
+                if (updown < trees.Last.Width && tus == 0)
                 {
                     character.moveTo(new SKPoint(character.Current_pos.X,character.Current_pos.Y-1));
                     updown++;
-                    if (updown >= tree.Width)
+                    if (updown >= trees.Last.Width)
                         tus = 1;
-                }
+                } 
                 else if (character.Current_pos.X < trees.Last.Start_from.X+ trees.Last.Height)
                 {
                     character.moveTo(new SKPoint(character.Current_pos.X+10,character.Current_pos.Y));
@@ -202,18 +188,21 @@ namespace App1
             if (fall && tus >= 3) {
                 if (tus == 3)
                 {
-                    if (trees.Count > 2) trees.remove(0);
                     if (stands.Last.Current_pos.X + stands.Last.Width > 100)
                     {
                         stands.secondLast.moveTo(new SKPoint(stands.secondLast.Current_pos.X - 10, stands.secondLast.Current_pos.Y));
                         stands.Last.moveTo(new SKPoint(stands.Last.Current_pos.X - 10, stands.Last.Current_pos.Y));
                         character.moveTo(new SKPoint(character.Current_pos.X - 10, character.Current_pos.Y));
                         trees.Last.moveTo(new SKPoint(trees.Last.Start_from.X - 10, trees.Last.Start_from.Y));
+                        if (trees.Count > 1)
+                            trees.secondLast.moveTo(new SKPoint(trees.secondLast.Start_from.X - 10, trees.secondLast.Start_from.Y));
                     }
                     else tus = 4;
                 }
                 else if (tus == 4)
                 {
+                    if (trees.Count > 1)
+                        trees.remove(0);
                     NextMove();
                     fall = false;
                     tus = -1;
