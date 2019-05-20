@@ -12,6 +12,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Media\background.jpg" />
+    <None Remove="Media\charactor.png" />
+    <None Remove="Media\monkey.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Media\background.jpg" />
+    <EmbeddedResource Include="Media\charactor.png" />
+    <EmbeddedResource Include="Media\monkey.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="MR.Gestures" Version="2.1.0" />
     <PackageReference Include="SkiaSharp" Version="1.68.0" />
     <PackageReference Include="SkiaSharp.Views" Version="1.68.0" />

@@ -1,7 +1,11 @@
-﻿using SkiaSharp;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System;
+using System.IO;
+using System.Reflection;
+
+using Xamarin.Forms;
+
+using SkiaSharp;
+using SkiaSharp.Views.Forms;
 
 namespace App1.Object
 {
@@ -13,11 +17,21 @@ namespace App1.Object
 
         public SKPaint paint;
 
+        public static SKBitmap CharactorBitsMap;
+
         public SKPoint Current_pos { get => _current_pos; set => _current_pos = value; }
         public int Width { get => _width; set => _width = value; }
 
         public Character(SKPoint start_from, int width = 40, int height = 50, SKPaint paint = null)
         {
+            if(CharactorBitsMap == null)
+            {
+                Assembly assembly = GetType().GetTypeInfo().Assembly;
+                using (Stream stream = assembly.GetManifestResourceStream(
+                                    "App1.Media.charactor.png")){
+                    CharactorBitsMap = SKBitmap.Decode(stream);
+                }
+            }
             _current_pos = new SKPoint( start_from.X -width,start_from.Y - height);
             _width = width;
             _height = height;
@@ -25,6 +39,14 @@ namespace App1.Object
         }
         public Character(float x, float y, int width = 25, int height = 40, SKPaint paint = null)
         {
+            if (CharactorBitsMap == null)
+            {
+                Assembly assembly = GetType().GetTypeInfo().Assembly;
+                using (Stream stream = assembly.GetManifestResourceStream("App1.Media.charactor.png"))
+                {
+                    CharactorBitsMap = SKBitmap.Decode(stream);
+                }
+            }
             _current_pos = new SKPoint(x - width, y - height);
             _width = width;
             _height = height;
@@ -49,7 +71,15 @@ namespace App1.Object
         {
             canvas.Save();
             canvas.Translate(_current_pos);
-            canvas.DrawRect(0, 0, _width, _height, paint);
+            SKRect rect = SKRect.Create(0, 0, _width, _height);
+            //canvas.DrawRect(0, 0, _width, _height, paint);
+            using (SKPaint paint = new SKPaint())
+            {
+                //paint.Color = paint.Color.WithAlpha((byte)(0xFF * (1 - progress)));
+                canvas.DrawBitmap(CharactorBitsMap, rect, paint);
+            }
+            
+
             canvas.Restore();
         }
     }

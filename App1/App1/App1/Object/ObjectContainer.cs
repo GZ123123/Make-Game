@@ -6,7 +6,7 @@ using SkiaSharp;
 namespace App1.Object
 {
     // giống như list nhưng có các thuộc tính được xây sẵn 
-    class ObjectContainer<T> : IDrawableObject
+    class ObjectContainer<T> : IDrawableObject,IObjectContainer<T>
     {
         protected List<T> _object;
         public int Count { get => _object.Count; }
@@ -21,22 +21,23 @@ namespace App1.Object
 
         public void draw(SKCanvas canvas)
         {
-            _object.ForEach(drawObject =>
-            {
-                ((IDrawableObject)drawObject).draw(canvas);
-            });
+            if(_object!= null && _object.Count > 0)
+                _object.ForEach(drawObject =>
+                {
+                    ((IDrawableObject)drawObject).draw(canvas);
+                });
         }
-
-        public virtual T remove(int index,int count = 1)
+        public virtual T remove(int index)
         {
-            if(count == 1)
-            {
                 T _ = _object[index];
                 _object.RemoveAt(index);
-                return _;
-            } else {
-                return _object[index];
-            }
+                return _;  
+        }
+        public virtual List<T> remove(int index,int count)
+        {
+            var _ = _object.GetRange(index, count);
+            _object.RemoveRange(index, count);
+            return _;
         }
     }
 }

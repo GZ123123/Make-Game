@@ -6,9 +6,8 @@
              >
     <Grid>
         <!--<Image Source="Image/background.jpg"></Image>-->
-        <Image Source="Image/background.jpg" Aspect="AspectFit" />
         <StackLayout>
-            <Image Source="Image/background.jpg" Aspect="AspectFit" />
+            <Image Source="Media/background.jpg" Aspect="AspectFit" />
             <!--<Image Source="Image/background.jpg"></Image>-->
             <Label Text="Stick Hero" 
            FontSize="54"

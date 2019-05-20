@@ -17,11 +17,7 @@ namespace App1
 
             setUp();
 
-            ////MainPage = new NavigationPage( new MainPage() );
-
-            //MainPage = new MainPage();
-
-            MainPage = new Play_Page();
+            MainPage = new NavigationPage(new MainPage());
 
         }
 

@@ -32,7 +32,6 @@ namespace App1
         SKPaint rpaint;
 
 
-
         // draw trees not tree
         private Tree tree;
 
@@ -43,12 +42,14 @@ namespace App1
         private Stand Nrect;
 
         // draw moveObjects 
-        private List<MoveObject> moveObjects = new List<MoveObject>();
+        //private List<MoveObject> moveObjects = new List<MoveObject>();
 
         // Container
         //private ObjectContainer<Rect> rects = new ObjectContainer<Rect>();
         private StandContainer stands = new StandContainer();
         private TreeContainer trees = new TreeContainer();
+
+        List<IMovableObject> movables = new List<IMovableObject>();
 
         // draw character
         private Character character;
@@ -57,12 +58,23 @@ namespace App1
 		{
 			InitializeComponent ();
             setUp();
+            fall = false;
+
+
 
             //rects.add(Crect);
             //rects.add(Nrect);
 
             stands.add(Crect);
             stands.add(Nrect);
+            // return Object from move
+
+            //MoveObject<Stand> moveStand = new MoveObject<Stand>(stands.Last);
+
+            //movables.Add(moveStand);
+            //moveStand.container = stands;
+            //moveStand.add();
+            
 
             // test: remove Object from container
             //var __ = rects.remove(0);
@@ -167,10 +179,17 @@ namespace App1
                     {
                         if (character.Current_pos.X+character.Width < stands.Last.Current_pos.X)
                         {
-                            var _  = await DisplayAlert("Thua roi", "Game Over", "Choi lai","Home");
-
-                            //if (_) Page.ReferenceEquals();
-                            //else NavigationPage.pop();
+                            if (await DisplayAlert("Thua roi", "Game Over", "Choi lai", "Home"))
+                            {
+                                Application.Current.MainPage.Navigation.InsertPageBefore(new Play_Page(), Navigation.NavigationStack[Navigation.NavigationStack.Count - 1]);
+                                await Navigation.PopAsync();
+                                return;
+                            }
+                            else
+                            {
+                                this.Navigation.RemovePage(this.Navigation.NavigationStack.Last());
+                                return;
+                            }
 
                         }
                         else
@@ -214,8 +233,6 @@ namespace App1
         {
             trees.add(new Tree(tree));
             stands.add(new Stand(stands.Last.Current_pos.X + stands.Last.Width + 50 + random.Next(10, 500), App.SCREEN_HEIGHT / 3 * 2, paint:rpaint));
-            
-
         }
         #endregion
     }

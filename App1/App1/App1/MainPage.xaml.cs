@@ -14,18 +14,13 @@ namespace App1
     public partial class MainPage : ContentPage
     {
         public MainPage()
-        {
-            // BackgroundImage = "image/background.jpg";
-            
+        {            
             InitializeComponent();
-
-
 
             NavigationPage.SetHasNavigationBar(this, false);
         }
         async void Start_Clicked(object sender, EventArgs e)
         {
-            await DisplayAlert("Alert", "Start", "Ok"); 
             await Navigation.PushAsync(new Play_Page());
         }
 
@@ -40,7 +35,6 @@ namespace App1
 
         async void Setting_Clicked(object sender, EventArgs e)
         {
-            //await DisplayAlert("Alert", "Setting", "Ok");
             await Navigation.PushAsync(new Setting());
         }
     }
