@@ -664,27 +664,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Minh Duy\\.nuget\\packages\\": {},
-    "C:\\ProgramData\\Xamarin\\NuGet\\": {},
+    "C:\\Users\\Admin\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Minh Duy\\Desktop\\MyDesk\\Mobile\\Project\\Final\\Make-Game\\App1\\App1\\App1\\App1.csproj",
+      "projectUniqueName": "D:\\VS\\Make-Game\\App1\\App1\\App1\\App1.csproj",
       "projectName": "App1",
-      "projectPath": "C:\\Users\\Minh Duy\\Desktop\\MyDesk\\Mobile\\Project\\Final\\Make-Game\\App1\\App1\\App1\\App1.csproj",
-      "packagesPath": "C:\\Users\\Minh Duy\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Minh Duy\\Desktop\\MyDesk\\Mobile\\Project\\Final\\Make-Game\\App1\\App1\\App1\\obj\\",
+      "projectPath": "D:\\VS\\Make-Game\\App1\\App1\\App1\\App1.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "D:\\VS\\Make-Game\\App1\\App1\\App1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\ProgramData\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Minh Duy\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"

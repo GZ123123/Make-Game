@@ -76,7 +76,8 @@ namespace App1.Object
             using (SKPaint paint = new SKPaint())
             {
                 //paint.Color = paint.Color.WithAlpha((byte)(0xFF * (1 - progress)));
-                canvas.DrawBitmap(CharactorBitsMap, rect, paint);
+                canvas.DrawRect(rect, paint);
+                //canvas.DrawBitmap(CharactorBitsMap, rect, paint);
             }
             
 

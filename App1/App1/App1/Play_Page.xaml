@@ -6,15 +6,14 @@
              x:Class="App1.Play_Page">
     <ContentPage.Content>
         <Grid>
+            <!--Background-->
+            <skia:SKCanvasView x:Name="canvasView"
+                PaintSurface="background_draw" >
+            </skia:SKCanvasView>
             
             <!--Graphic Content-->
             <skia:SKCanvasView x:Name="canvasView"
                 PaintSurface="SKCanvasView_PaintSurface" >
-                <!--<skia:SKCanvasView.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped">
-
-                    </TapGestureRecognizer>
-                </skia:SKCanvasView.GestureRecognizers>-->
             </skia:SKCanvasView>
 
             <!--Tap Content-->

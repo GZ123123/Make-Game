@@ -9,6 +9,8 @@ using Xamarin.Forms.Xaml;
 using SkiaSharp.Views.Forms;
 using SkiaSharp;
 using App1.Object;
+using System.Reflection;
+using System.IO;
 
 namespace App1
 {
@@ -78,6 +80,24 @@ namespace App1
         }
 
         #region Set_UP
+
+        void background_draw(object sender, SKPaintSurfaceEventArgs e)
+        {
+            SKImageInfo info = e.Info;
+            SKSurface surface = e.Surface;
+            SKCanvas canvas = surface.Canvas;
+
+            SKRect rect = SKRect.Create(0, 0, info.Width, info.Height);
+
+            // load bitmap
+            Assembly assembly = GetType().GetTypeInfo().Assembly;
+            using (Stream stream = assembly.GetManifestResourceStream("App1.Media.background02.png"))
+            {
+                SKBitmap CharactorBitsMap = SKBitmap.Decode(stream);
+                canvas.DrawBitmap(CharactorBitsMap, rect);
+
+            }
+        }
         void setUp()
         {
             tree = new Tree(96, App.SCREEN_HEIGHT / 3 * 2, 0);
