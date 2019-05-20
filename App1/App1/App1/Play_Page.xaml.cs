@@ -80,8 +80,8 @@ namespace App1
         #region Set_UP
         void setUp()
         {
-            tree = new Tree(100, App.SCREEN_HEIGHT / 3 * 2, 0);
-            character = new Character(100 - tree.Width / 2, App.SCREEN_HEIGHT / 3 * 2);
+            tree = new Tree(96, App.SCREEN_HEIGHT / 3 * 2, 0);
+            character = new Character(100 - tree.Width , App.SCREEN_HEIGHT / 3 * 2);
             Crect = new Stand(0, App.SCREEN_HEIGHT / 3 * 2);
             Nrect = new Stand(Crect.Current_pos.X + Crect.Width + 50 + random.Next(10, 400), App.SCREEN_HEIGHT / 3 * 2,50+ random.Next(10, 100));
 
@@ -191,7 +191,7 @@ namespace App1
             if (fall && tus >= 3) {
                 if (tus == 3)
                 {
-                    if (stands.Last.Current_pos.X + stands.Last.Width - trees.Last.Width > 100)
+                    if (stands.Last.Current_pos.X + stands.Last.Width - trees.Last.Width > 98)
                     {
                         stands.secondLast.moveTo(new SKPoint(stands.secondLast.Current_pos.X - 10, stands.secondLast.Current_pos.Y));
                         stands.Last.moveTo(new SKPoint(stands.Last.Current_pos.X - 10, stands.Last.Current_pos.Y));
