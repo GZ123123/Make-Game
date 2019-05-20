@@ -40,14 +40,6 @@ public class ScrollViewRenderer
 	}
 
 
-	public ScrollViewRenderer (android.content.Context p0, android.util.AttributeSet p1, int p2, int p3)
-	{
-		super (p0, p1, p2, p3);
-		if (getClass () == ScrollViewRenderer.class)
-			mono.android.TypeManager.Activate ("MR.Gestures.Android.Renderers.ScrollViewRenderer, MR.Gestures", "Android.Content.Context, Mono.Android:Android.Util.IAttributeSet, Mono.Android:System.Int32, mscorlib:System.Int32, mscorlib", this, new java.lang.Object[] { p0, p1, p2, p3 });
-	}
-
-
 	public boolean dispatchTouchEvent (android.view.MotionEvent p0)
 	{
 		return n_dispatchTouchEvent (p0);

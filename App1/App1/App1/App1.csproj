@@ -28,6 +28,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <!--<PackageReference Include="System.Reflection.Emit" Version="4.3.0">
+		<ExcludeAssets>all</ExcludeAssets>
+	</PackageReference>
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore" Version="2.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="2.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.0.0" />-->
+    
     <PackageReference Include="MR.Gestures" Version="2.1.0" />
     <PackageReference Include="SkiaSharp" Version="1.68.0" />
     <PackageReference Include="SkiaSharp.Views" Version="1.68.0" />

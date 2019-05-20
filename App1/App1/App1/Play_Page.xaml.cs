@@ -80,10 +80,10 @@ namespace App1
         #region Set_UP
         void setUp()
         {
-            Crect = new Stand(50, App.SCREEN_HEIGHT / 3 * 2);
-            Nrect = new Stand(Crect.Current_pos.X + Crect.Width + 50 + random.Next(10, 500), App.SCREEN_HEIGHT / 3 * 2);
             tree = new Tree(100, App.SCREEN_HEIGHT / 3 * 2, 0);
             character = new Character(100 - tree.Width / 2, App.SCREEN_HEIGHT / 3 * 2);
+            Crect = new Stand(0, App.SCREEN_HEIGHT / 3 * 2);
+            Nrect = new Stand(Crect.Current_pos.X + Crect.Width + 50 + random.Next(10, 400), App.SCREEN_HEIGHT / 3 * 2,50+ random.Next(10, 100));
 
             SKPaint paint = new SKPaint()
             {
@@ -142,6 +142,9 @@ namespace App1
                 if (tus == -1)
                 {
                     trees.Last.moveTo(new SKPoint(trees.Last.Start_from.X, trees.Last.Start_from.Y + -trees.Last.Width / 2));
+                    //if (stands.Last.Current_pos.X > 100 - tree.Width)
+                    //    character.moveTo(new SKPoint(character.Current_pos.X - 5, character.Current_pos.Y));
+                    //else
                     tus = 0;
                 }
                 if (updown < trees.Last.Width && tus == 0)
@@ -163,7 +166,7 @@ namespace App1
                     updown--;
                     if (updown <= 0)
                     {
-                        if (character.Current_pos.X+character.Width < stands.Last.Current_pos.X)
+                        if (character.Current_pos.X+character.Width < stands.Last.Current_pos.X || character.Current_pos.X > stands.Last.Current_pos.X + stands.Last.Width)
                         {
                             if (await DisplayAlert("Thua roi", "Game Over", "Choi lai", "Home"))
                             {
@@ -188,7 +191,7 @@ namespace App1
             if (fall && tus >= 3) {
                 if (tus == 3)
                 {
-                    if (stands.Last.Current_pos.X + stands.Last.Width > 100)
+                    if (stands.Last.Current_pos.X + stands.Last.Width - trees.Last.Width > 100)
                     {
                         stands.secondLast.moveTo(new SKPoint(stands.secondLast.Current_pos.X - 10, stands.secondLast.Current_pos.Y));
                         stands.Last.moveTo(new SKPoint(stands.Last.Current_pos.X - 10, stands.Last.Current_pos.Y));
@@ -201,11 +204,19 @@ namespace App1
                 }
                 else if (tus == 4)
                 {
-                    if (trees.Count > 1)
-                        trees.remove(0);
-                    NextMove();
-                    fall = false;
-                    tus = -1;
+                    if (character.Current_pos.X > 100 - trees.Last.Width - character.Width)
+                        character.moveTo(new SKPoint(character.Current_pos.X - Math.Min(5.0f, character.Current_pos.X - (100 - trees.Last.Width - character.Width)), character.Current_pos.Y));
+                    else if (character.Current_pos.X < 100 - trees.Last.Width - character.Width)
+                        character.moveTo(new SKPoint(character.Current_pos.X + Math.Min(5.0f, 100 - trees.Last.Width - character.Width - character.Current_pos.X), character.Current_pos.Y));
+                    else
+                    {
+                        if (trees.Count > 1)
+                            trees.remove(0);
+                        NextMove();
+                        fall = false;
+                        tus = -1;
+                    }
+                    
                 }
                 
             }
@@ -221,7 +232,7 @@ namespace App1
         private void NextMove()
         {
             trees.add(new Tree(tree));
-            stands.add(new Stand(stands.Last.Current_pos.X + stands.Last.Width + 50 + random.Next(10, 500), App.SCREEN_HEIGHT / 3 * 2, paint:rpaint));
+            stands.add(new Stand(stands.Last.Current_pos.X + stands.Last.Width + 50 + random.Next(10, 500), App.SCREEN_HEIGHT / 3 * 2, 50 + random.Next(10, 100), paint:rpaint));
         }
         #endregion
     }
