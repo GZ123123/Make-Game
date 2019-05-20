@@ -95,7 +95,6 @@ namespace App1
             {
                 SKBitmap CharactorBitsMap = SKBitmap.Decode(stream);
                 canvas.DrawBitmap(CharactorBitsMap, rect);
-
             }
         }
         void setUp()
@@ -114,7 +113,7 @@ namespace App1
 
             rpaint = new SKPaint()
             {
-                Color = SKColors.Red
+                Color = SKColors.Gray
             };
 
             SKPaint characterPain = new SKPaint()
@@ -170,6 +169,7 @@ namespace App1
                 if (updown < trees.Last.Width && tus == 0)
                 {
                     character.moveTo(new SKPoint(character.Current_pos.X,character.Current_pos.Y-1));
+                    character.is_stand = false;
                     updown++;
                     if (updown >= trees.Last.Width)
                         tus = 1;
@@ -201,8 +201,10 @@ namespace App1
                             }
 
                         }
-                        else
+                        else {
+                            character.is_stand = true;
                             tus = 3;
+                        }
                     }
                         
                 }

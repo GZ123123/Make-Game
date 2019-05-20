@@ -7,7 +7,7 @@
     <ContentPage.Content>
         <Grid>
             <!--Background-->
-            <skia:SKCanvasView x:Name="canvasView"
+            <skia:SKCanvasView x:Name="background"
                 PaintSurface="background_draw" >
             </skia:SKCanvasView>
             
@@ -17,8 +17,8 @@
             </skia:SKCanvasView>
 
             <!--Tap Content-->
-            <mr:BoxView Color="Accent"
-                        Opacity="0.5"
+            <mr:BoxView 
+                        Opacity="0"
                         LongPressing="Red_LongPressing"
                         LongPressed="Red_LongPressed"
                         LongPressedCommand="{Binding LongPressedCommand}"

@@ -17,6 +17,36 @@
     <None Remove="Media\background02.png" />
     <None Remove="Media\charactor.png" />
     <None Remove="Media\monkey.png" />
+    <None Remove="Media\move1.png" />
+    <None Remove="Media\move2.png" />
+    <None Remove="Media\move3.png" />
+    <None Remove="Media\move4.png" />
+    <None Remove="Media\move5.png" />
+    <None Remove="Media\stand.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Media\stand.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Media\move5.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Media\move4.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Media\move3.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Media\move2.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Media\move1.png" />
   </ItemGroup>
 
   <ItemGroup>
