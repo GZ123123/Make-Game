@@ -113,3 +113,4 @@ C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1.i
 C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1.iOS\obj\iPhoneSimulator\Debug\CopyFilesToMac\App1.iOS.exe.mdb.ReferenceCopyLocalPaths.stamp
 C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1.iOS\obj\iPhoneSimulator\Debug\CopyFilesToMac\App1.iOS.pdb.DebugSymbolsProjectOutputGroupOutput.stamp
 C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1.iOS\obj\iPhoneSimulator\Debug\CopyFilesToMac\Info.plist.NoneOutput.stamp
+C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1.iOS\bin\iPhoneSimulator\Debug\App1.dll.mdb

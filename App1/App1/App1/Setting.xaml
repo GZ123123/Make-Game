@@ -4,9 +4,33 @@
              x:Class="App1.Setting">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="This is setting"
+            <Label Text="How to play: Nhân vật sẽ bắt đầu ở một bục và có bục tiếp theo bên phải, nhấn giữ vào màn hình cây bắt qua bục kia sẽ dài lên, đến khi buông tay ra thì cây sẽ dừng tăng chiều cao và ngã qua phải, nhân vật sẽ theo cây đó mà đi qua bục tiếp theo, nếu cây bắt ngắn hơn hay dài hơn so với khoảng cách của 2 bục thì nhận vật sẽ rơi xuống và thua."
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+            <Label Text="Nhóm sinh viên thực hiện:"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand"
+                   HorizontalTextAlignment="Center"/>
+            <Label Text="Nguyễn Minh Duy - 43.01.104.031"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand"
+                   HorizontalTextAlignment="Center"/>
+            <Label Text="Nguyễn Thái Sang - 43.01.104.149"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand"
+                   HorizontalTextAlignment="Center"/>
+            <Label Text="Lâm Phước Đạt - 43.01.104.015"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand"
+                   HorizontalTextAlignment="Center"/>
+            <Label Text="Gíao viên giảng dạy: Thạc sĩ Đỗ Thái Nguyên"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand"
+                   HorizontalTextAlignment="Center"/>
+            <Button Text="Clear All Data"
+                    Clicked="Button_Clicked"
+                    VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand"></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

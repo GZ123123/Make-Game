@@ -187,9 +187,10 @@ namespace App1
                     updown--;
                     if (updown <= 0)
                     {
-                        if (character.Current_pos.X+character.Width < stands.Last.Current_pos.X || character.Current_pos.X > stands.Last.Current_pos.X + stands.Last.Width)
+                        if (character.Current_pos.X+character.Width < stands.Last.Current_pos.X || character.Current_pos.X - character.Width/2 > stands.Last.Current_pos.X + stands.Last.Width)
                         {
-                            if (await DisplayAlert("Thua roi", "Game Over", "Choi lai", "Home"))
+                            //string text = File.ReadAllText(App.fileName);
+                            if (await DisplayAlert("Game Over", "High Score: 56", "New game", "Home"))
                             {
                                 Application.Current.MainPage.Navigation.InsertPageBefore(new Play_Page(), Navigation.NavigationStack[Navigation.NavigationStack.Count - 1]);
                                 await Navigation.PopAsync();

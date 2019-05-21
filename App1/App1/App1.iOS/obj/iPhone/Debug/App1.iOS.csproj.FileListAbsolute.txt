@@ -42,7 +42,7 @@ C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1.i
 C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1.iOS\bin\iPhone\Debug\nb\Xamarin.Forms.Platform.iOS.resources.dll
 C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1.iOS\bin\iPhone\Debug\nl\Xamarin.Forms.Platform.iOS.resources.dll
 C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1.iOS\bin\iPhone\Debug\pl\Xamarin.Forms.Platform.iOS.resources.dll
-C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1.iOS\bin\iPhone\Debug\pt-BR\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1.iOS\bin\iPhone\Debug\pt-br\Xamarin.Forms.Platform.iOS.resources.dll
 C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1.iOS\bin\iPhone\Debug\pt\Xamarin.Forms.Platform.iOS.resources.dll
 C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1.iOS\bin\iPhone\Debug\ro\Xamarin.Forms.Platform.iOS.resources.dll
 C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1.iOS\bin\iPhone\Debug\ru\Xamarin.Forms.Platform.iOS.resources.dll
@@ -78,6 +78,7 @@ C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1.i
 C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1.iOS\obj\iPhone\Debug\coremlc\_PartialAppManifest.items
 C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1.iOS\obj\iPhone\Debug\coremlc\_BundleResourceWithLogicalName.items
 C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1.iOS\obj\iPhone\Debug\optimized\
+C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1.iOS\obj\iPhone\Debug\App1.iOS.csprojAssemblyReference.cache
 C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1.iOS\obj\iPhone\Debug\App1.iOS.csproj.CoreCompileInputs.cache
 C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1.iOS\obj\iPhone\Debug\XamlC.stamp
 C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1.iOS\obj\iPhone\Debug\App1.iOS.csproj.CopyComplete
@@ -112,5 +113,4 @@ C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1.i
 C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1.iOS\obj\iPhone\Debug\CopyFilesToMac\Xamarin.Forms.Platform.iOS.dll.mdb.ReferenceCopyLocalPaths.stamp
 C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1.iOS\obj\iPhone\Debug\CopyFilesToMac\App1.iOS.exe.mdb.ReferenceCopyLocalPaths.stamp
 C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1.iOS\obj\iPhone\Debug\CopyFilesToMac\App1.iOS.pdb.DebugSymbolsProjectOutputGroupOutput.stamp
-C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1.iOS\obj\iPhone\Debug\CopyFilesToMac\Entitlements.plist.NoneOutput.stamp
 C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1.iOS\obj\iPhone\Debug\CopyFilesToMac\Info.plist.NoneOutput.stamp

@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-05-20T20:27:12.708</Modified>
+      <Modified>2019-05-21T02:03:35.988</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1.UWP\bin\x86\Debug\App1.UWP.exe">
       <PackagePath>entrypoint\App1.UWP.exe</PackagePath>
-      <Modified>2019-05-20T20:27:11.901</Modified>
+      <Modified>2019-05-21T02:03:35.063</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Minh Duy\.nuget\packages\microsoft.extensions.configuration\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Configuration.dll">
       <PackagePath>Microsoft.Extensions.Configuration.dll</PackagePath>
@@ -102,25 +102,25 @@
       <PackagePath>Xamarin.Essentials.dll</PackagePath>
       <Modified>2019-03-15T15:29:30.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Minh Duy\.nuget\packages\xamarin.forms\3.6.0.344457\lib\uap10.0\Xamarin.Forms.Core.dll">
+    <AppxPackagedFile Include="C:\Users\Minh Duy\.nuget\packages\xamarin.forms\4.0.0.394984-pre10\lib\uap10.0\Xamarin.Forms.Core.dll">
       <PackagePath>Xamarin.Forms.Core.dll</PackagePath>
-      <Modified>2019-04-15T06:29:20.000</Modified>
+      <Modified>2019-05-01T12:30:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Minh Duy\.nuget\packages\xamarin.forms\3.6.0.344457\lib\uap10.0\Xamarin.Forms.Platform.UAP.dll">
+    <AppxPackagedFile Include="C:\Users\Minh Duy\.nuget\packages\xamarin.forms\4.0.0.394984-pre10\lib\uap10.0\Xamarin.Forms.Platform.UAP.dll">
       <PackagePath>Xamarin.Forms.Platform.UAP.dll</PackagePath>
-      <Modified>2019-04-15T06:29:22.000</Modified>
+      <Modified>2019-05-01T12:30:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Minh Duy\.nuget\packages\xamarin.forms\3.6.0.344457\lib\uap10.0\Xamarin.Forms.Platform.dll">
+    <AppxPackagedFile Include="C:\Users\Minh Duy\.nuget\packages\xamarin.forms\4.0.0.394984-pre10\lib\uap10.0\Xamarin.Forms.Platform.dll">
       <PackagePath>Xamarin.Forms.Platform.dll</PackagePath>
-      <Modified>2019-04-15T06:29:22.000</Modified>
+      <Modified>2019-05-01T12:30:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Minh Duy\.nuget\packages\xamarin.forms\3.6.0.344457\lib\uap10.0\Xamarin.Forms.Xaml.dll">
+    <AppxPackagedFile Include="C:\Users\Minh Duy\.nuget\packages\xamarin.forms\4.0.0.394984-pre10\lib\uap10.0\Xamarin.Forms.Xaml.dll">
       <PackagePath>Xamarin.Forms.Xaml.dll</PackagePath>
-      <Modified>2019-04-15T06:29:24.000</Modified>
+      <Modified>2019-05-01T12:30:28.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1\bin\Debug\netstandard2.0\App1.dll">
       <PackagePath>App1.dll</PackagePath>
-      <Modified>2019-05-20T20:27:05.914</Modified>
+      <Modified>2019-05-21T02:03:28.647</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\ProgramData\Xamarin\NuGet\win2d.uwp\1.20.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
@@ -271,27 +271,27 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1.UWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2019-05-20T20:27:11.685</Modified>
+      <Modified>2019-05-21T02:03:34.802</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1.UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2019-05-20T20:27:11.686</Modified>
+      <Modified>2019-05-21T02:03:34.803</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2017-09-28T10:28:16.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Minh Duy\.nuget\packages\xamarin.forms\3.6.0.344457\lib\uap10.0\Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml">
+    <AppxPackagedFile Include="C:\Users\Minh Duy\.nuget\packages\xamarin.forms\4.0.0.394984-pre10\lib\uap10.0\Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml">
       <PackagePath>Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml</PackagePath>
-      <Modified>2019-04-15T06:29:16.000</Modified>
+      <Modified>2019-05-01T12:30:24.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2019-05-20T20:25:40.389</Modified>
+      <Modified>2019-05-20T23:57:02.593</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1.UWP\bin\x86\Debug\Core\App1.UWP.exe">
       <PackagePath>App1.UWP.exe</PackagePath>
-      <Modified>2019-05-20T20:27:12.702</Modified>
+      <Modified>2019-05-21T02:03:35.979</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

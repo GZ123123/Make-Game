@@ -2,6 +2,7 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Xamarin.Essentials;
+using System.IO;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace App1
@@ -10,11 +11,18 @@ namespace App1
     {
         public static int SCREEN_WIDTH;
         public static int SCREEN_HEIGHT;
+        static public string fileName;
 
         public App()
         {
             InitializeComponent();
-
+            //fileName = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "score.txt");
+            //if (File.Exists(fileName))
+            //{
+            //    //File.WriteAllText(fileName, "0");
+            //    File.Create("score.txt");
+            //    File.WriteAllText(App.fileName, "0");
+            //}
             setUp();
 
             MainPage = new NavigationPage(new MainPage());
