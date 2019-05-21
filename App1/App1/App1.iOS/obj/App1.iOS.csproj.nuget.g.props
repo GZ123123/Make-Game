@@ -3,16 +3,17 @@
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
     <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
-    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">D:\VS\Make-Game\App1\App1\App1.iOS\obj\project.assets.json</ProjectAssetsFile>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1.iOS\obj\project.assets.json</ProjectAssetsFile>
     <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
-    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\Admin\.nuget\packages\</NuGetPackageFolders>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\Minh Duy\.nuget\packages\;C:\ProgramData\Xamarin\NuGet\</NuGetPackageFolders>
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
-    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">4.9.3</NuGetToolVersion>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">5.0.2</NuGetToolVersion>
   </PropertyGroup>
   <PropertyGroup>
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
   </PropertyGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Import Project="$(NuGetPackageRoot)xamarin.forms\3.6.0.344457\build\Xamarin.Forms.props" Condition="Exists('$(NuGetPackageRoot)xamarin.forms\3.6.0.344457\build\Xamarin.Forms.props')" />
+    <Import Project="$(NuGetPackageRoot)xamarin.forms\4.0.0.394984-pre10\build\Xamarin.Forms.props" Condition="Exists('$(NuGetPackageRoot)xamarin.forms\4.0.0.394984-pre10\build\Xamarin.Forms.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.netcore.universalwindowsplatform\6.2.8\build\Microsoft.NETCore.UniversalWindowsPlatform.props" Condition="Exists('$(NuGetPackageRoot)microsoft.netcore.universalwindowsplatform\6.2.8\build\Microsoft.NETCore.UniversalWindowsPlatform.props')" />
   </ImportGroup>
 </Project>

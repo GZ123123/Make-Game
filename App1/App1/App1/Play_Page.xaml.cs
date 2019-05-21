@@ -18,11 +18,12 @@ namespace App1
 	public partial class Play_Page : ContentPage
 	{
         #region public
-        public static  bool fall = false;
+        public static bool fall = false;
         #endregion
 
         #region private
         private string p = "";
+        private long score = 0;
         private float updown = 0;
         private int tus = -1;
         private double count = 1;
@@ -141,7 +142,7 @@ namespace App1
             p = "LongPressed";
             if(is_long_press)
                 trees.rotation();
-            is_long_press = false;            
+            is_long_press = false;
         }
         #endregion
 
@@ -176,7 +177,7 @@ namespace App1
                 } 
                 else if (character.Current_pos.X < trees.Last.Start_from.X+ trees.Last.Height)
                 {
-                    character.moveTo(new SKPoint(character.Current_pos.X+10,character.Current_pos.Y));
+                    character.moveTo(new SKPoint(character.Current_pos.X+5,character.Current_pos.Y));
                     if (character.Current_pos.X >= trees.Last.Start_from.X + trees.Last.Height)
                         tus = 2;
                 }
@@ -199,9 +200,10 @@ namespace App1
                                 this.Navigation.RemovePage(this.Navigation.NavigationStack.Last());
                                 return;
                             }
-
+                            score = 0;
                         }
                         else {
+                            score++;
                             character.is_stand = true;
                             tus = 3;
                         }
@@ -249,6 +251,14 @@ namespace App1
             trees.draw(canvas);
             
             character.draw(canvas);
+            canvas.DrawText(score.ToString(), App.SCREEN_WIDTH / 2, 100, new SKPaint()
+            {
+                Color = SKColors.Black,
+                IsStroke = true,
+                Style = SKPaintStyle.Stroke,
+                TextSize = 50
+            });
+            
         }
 
         private void NextMove()

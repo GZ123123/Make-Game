@@ -2,6 +2,71 @@
   "version": 3,
   "targets": {
     "Xamarin.iOS,Version=v1.0": {
+      "Microsoft.Extensions.Configuration/3.0.0-preview5.19227.9": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "3.0.0-preview5.19227.9"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration.Abstractions/3.0.0-preview5.19227.9": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "3.0.0-preview5.19227.9"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection/3.0.0-preview5.19227.9": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.0.0-preview5.19227.9"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/3.0.0-preview5.19227.9": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Primitives/3.0.0-preview5.19227.9": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.2",
+          "System.Runtime.CompilerServices.Unsafe": "4.6.0-preview5.19224.8"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {}
+        }
+      },
+      "Microsoft.NETCore.UniversalWindowsPlatform/6.2.8": {
+        "type": "package",
+        "build": {
+          "build/Microsoft.NETCore.UniversalWindowsPlatform.props": {},
+          "build/Microsoft.NetCore.UniversalWindowsPlatform.targets": {}
+        }
+      },
       "MR.Gestures/2.1.0": {
         "type": "package",
         "dependencies": {
@@ -71,6 +136,28 @@
           "lib/Xamarin.iOS/SkiaSharp.Views.Forms.dll": {}
         }
       },
+      "System.Buffers/4.4.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Buffers.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Buffers.dll": {}
+        }
+      },
+      "System.Memory/4.5.2": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.4.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Memory.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Memory.dll": {}
+        }
+      },
       "System.Numerics.Vectors/4.5.0": {
         "type": "package",
         "compile": {
@@ -78,6 +165,24 @@
         },
         "runtime": {
           "lib/xamarinios10/_._": {}
+        }
+      },
+      "System.Reflection.Emit/4.3.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard1.1/_._": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/_._": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.6.0-preview5.19224.8": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
         }
       },
       "Xamarin.Essentials/1.1.0": {
@@ -95,7 +200,7 @@
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/3.6.0.344457": {
+      "Xamarin.Forms/4.0.0.394984-pre10": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -173,8 +278,8 @@
           "lib/Xamarin.iOS10/pl/Xamarin.Forms.Platform.iOS.resources.dll": {
             "locale": "pl"
           },
-          "lib/Xamarin.iOS10/pt-BR/Xamarin.Forms.Platform.iOS.resources.dll": {
-            "locale": "pt-BR"
+          "lib/Xamarin.iOS10/pt-br/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "pt-br"
           },
           "lib/Xamarin.iOS10/pt/Xamarin.Forms.Platform.iOS.resources.dll": {
             "locale": "pt"
@@ -223,11 +328,14 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "MR.Gestures": "2.1.0",
+          "Microsoft.Extensions.Configuration": "2.0.0",
+          "Microsoft.Extensions.DependencyInjection": "2.0.0",
           "SkiaSharp": "1.68.0",
           "SkiaSharp.Views": "1.68.0",
           "SkiaSharp.Views.Forms": "1.68.0",
+          "System.Reflection.Emit": "4.3.0",
           "Xamarin.Essentials": "1.1.0",
-          "Xamarin.Forms": "3.4.0.1008975"
+          "Xamarin.Forms": "3.6.0.344457"
         },
         "compile": {
           "bin/placeholder/App1.dll": {}
@@ -238,6 +346,71 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win": {
+      "Microsoft.Extensions.Configuration/3.0.0-preview5.19227.9": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "3.0.0-preview5.19227.9"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration.Abstractions/3.0.0-preview5.19227.9": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "3.0.0-preview5.19227.9"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection/3.0.0-preview5.19227.9": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.0.0-preview5.19227.9"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/3.0.0-preview5.19227.9": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Primitives/3.0.0-preview5.19227.9": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.2",
+          "System.Runtime.CompilerServices.Unsafe": "4.6.0-preview5.19224.8"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {}
+        }
+      },
+      "Microsoft.NETCore.UniversalWindowsPlatform/6.2.8": {
+        "type": "package",
+        "build": {
+          "build/Microsoft.NETCore.UniversalWindowsPlatform.props": {},
+          "build/Microsoft.NetCore.UniversalWindowsPlatform.targets": {}
+        }
+      },
       "MR.Gestures/2.1.0": {
         "type": "package",
         "dependencies": {
@@ -285,6 +458,28 @@
           "lib/Xamarin.iOS/SkiaSharp.Views.Forms.dll": {}
         }
       },
+      "System.Buffers/4.4.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Buffers.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Buffers.dll": {}
+        }
+      },
+      "System.Memory/4.5.2": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.4.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Memory.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Memory.dll": {}
+        }
+      },
       "System.Numerics.Vectors/4.5.0": {
         "type": "package",
         "compile": {
@@ -292,6 +487,24 @@
         },
         "runtime": {
           "lib/xamarinios10/_._": {}
+        }
+      },
+      "System.Reflection.Emit/4.3.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard1.1/_._": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/_._": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.6.0-preview5.19224.8": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
         }
       },
       "Xamarin.Essentials/1.1.0": {
@@ -309,7 +522,7 @@
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/3.6.0.344457": {
+      "Xamarin.Forms/4.0.0.394984-pre10": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -387,8 +600,8 @@
           "lib/Xamarin.iOS10/pl/Xamarin.Forms.Platform.iOS.resources.dll": {
             "locale": "pl"
           },
-          "lib/Xamarin.iOS10/pt-BR/Xamarin.Forms.Platform.iOS.resources.dll": {
-            "locale": "pt-BR"
+          "lib/Xamarin.iOS10/pt-br/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "pt-br"
           },
           "lib/Xamarin.iOS10/pt/Xamarin.Forms.Platform.iOS.resources.dll": {
             "locale": "pt"
@@ -437,11 +650,14 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "MR.Gestures": "2.1.0",
+          "Microsoft.Extensions.Configuration": "2.0.0",
+          "Microsoft.Extensions.DependencyInjection": "2.0.0",
           "SkiaSharp": "1.68.0",
           "SkiaSharp.Views": "1.68.0",
           "SkiaSharp.Views.Forms": "1.68.0",
+          "System.Reflection.Emit": "4.3.0",
           "Xamarin.Essentials": "1.1.0",
-          "Xamarin.Forms": "3.4.0.1008975"
+          "Xamarin.Forms": "3.6.0.344457"
         },
         "compile": {
           "bin/placeholder/App1.dll": {}
@@ -452,6 +668,71 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x64": {
+      "Microsoft.Extensions.Configuration/3.0.0-preview5.19227.9": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "3.0.0-preview5.19227.9"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration.Abstractions/3.0.0-preview5.19227.9": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "3.0.0-preview5.19227.9"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection/3.0.0-preview5.19227.9": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.0.0-preview5.19227.9"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/3.0.0-preview5.19227.9": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Primitives/3.0.0-preview5.19227.9": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.2",
+          "System.Runtime.CompilerServices.Unsafe": "4.6.0-preview5.19224.8"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {}
+        }
+      },
+      "Microsoft.NETCore.UniversalWindowsPlatform/6.2.8": {
+        "type": "package",
+        "build": {
+          "build/Microsoft.NETCore.UniversalWindowsPlatform.props": {},
+          "build/Microsoft.NetCore.UniversalWindowsPlatform.targets": {}
+        }
+      },
       "MR.Gestures/2.1.0": {
         "type": "package",
         "dependencies": {
@@ -502,6 +783,28 @@
           "lib/Xamarin.iOS/SkiaSharp.Views.Forms.dll": {}
         }
       },
+      "System.Buffers/4.4.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Buffers.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Buffers.dll": {}
+        }
+      },
+      "System.Memory/4.5.2": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.4.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Memory.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Memory.dll": {}
+        }
+      },
       "System.Numerics.Vectors/4.5.0": {
         "type": "package",
         "compile": {
@@ -509,6 +812,24 @@
         },
         "runtime": {
           "lib/xamarinios10/_._": {}
+        }
+      },
+      "System.Reflection.Emit/4.3.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard1.1/_._": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/_._": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.6.0-preview5.19224.8": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
         }
       },
       "Xamarin.Essentials/1.1.0": {
@@ -526,7 +847,7 @@
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/3.6.0.344457": {
+      "Xamarin.Forms/4.0.0.394984-pre10": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -604,8 +925,8 @@
           "lib/Xamarin.iOS10/pl/Xamarin.Forms.Platform.iOS.resources.dll": {
             "locale": "pl"
           },
-          "lib/Xamarin.iOS10/pt-BR/Xamarin.Forms.Platform.iOS.resources.dll": {
-            "locale": "pt-BR"
+          "lib/Xamarin.iOS10/pt-br/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "pt-br"
           },
           "lib/Xamarin.iOS10/pt/Xamarin.Forms.Platform.iOS.resources.dll": {
             "locale": "pt"
@@ -654,11 +975,14 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "MR.Gestures": "2.1.0",
+          "Microsoft.Extensions.Configuration": "2.0.0",
+          "Microsoft.Extensions.DependencyInjection": "2.0.0",
           "SkiaSharp": "1.68.0",
           "SkiaSharp.Views": "1.68.0",
           "SkiaSharp.Views.Forms": "1.68.0",
+          "System.Reflection.Emit": "4.3.0",
           "Xamarin.Essentials": "1.1.0",
-          "Xamarin.Forms": "3.4.0.1008975"
+          "Xamarin.Forms": "3.6.0.344457"
         },
         "compile": {
           "bin/placeholder/App1.dll": {}
@@ -669,6 +993,71 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x86": {
+      "Microsoft.Extensions.Configuration/3.0.0-preview5.19227.9": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "3.0.0-preview5.19227.9"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration.Abstractions/3.0.0-preview5.19227.9": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "3.0.0-preview5.19227.9"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection/3.0.0-preview5.19227.9": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.0.0-preview5.19227.9"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/3.0.0-preview5.19227.9": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Primitives/3.0.0-preview5.19227.9": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.2",
+          "System.Runtime.CompilerServices.Unsafe": "4.6.0-preview5.19224.8"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {}
+        }
+      },
+      "Microsoft.NETCore.UniversalWindowsPlatform/6.2.8": {
+        "type": "package",
+        "build": {
+          "build/Microsoft.NETCore.UniversalWindowsPlatform.props": {},
+          "build/Microsoft.NetCore.UniversalWindowsPlatform.targets": {}
+        }
+      },
       "MR.Gestures/2.1.0": {
         "type": "package",
         "dependencies": {
@@ -719,6 +1108,28 @@
           "lib/Xamarin.iOS/SkiaSharp.Views.Forms.dll": {}
         }
       },
+      "System.Buffers/4.4.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Buffers.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Buffers.dll": {}
+        }
+      },
+      "System.Memory/4.5.2": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.4.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Memory.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Memory.dll": {}
+        }
+      },
       "System.Numerics.Vectors/4.5.0": {
         "type": "package",
         "compile": {
@@ -726,6 +1137,24 @@
         },
         "runtime": {
           "lib/xamarinios10/_._": {}
+        }
+      },
+      "System.Reflection.Emit/4.3.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard1.1/_._": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/_._": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.6.0-preview5.19224.8": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
         }
       },
       "Xamarin.Essentials/1.1.0": {
@@ -743,7 +1172,7 @@
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/3.6.0.344457": {
+      "Xamarin.Forms/4.0.0.394984-pre10": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -821,8 +1250,8 @@
           "lib/Xamarin.iOS10/pl/Xamarin.Forms.Platform.iOS.resources.dll": {
             "locale": "pl"
           },
-          "lib/Xamarin.iOS10/pt-BR/Xamarin.Forms.Platform.iOS.resources.dll": {
-            "locale": "pt-BR"
+          "lib/Xamarin.iOS10/pt-br/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "pt-br"
           },
           "lib/Xamarin.iOS10/pt/Xamarin.Forms.Platform.iOS.resources.dll": {
             "locale": "pt"
@@ -871,11 +1300,14 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "MR.Gestures": "2.1.0",
+          "Microsoft.Extensions.Configuration": "2.0.0",
+          "Microsoft.Extensions.DependencyInjection": "2.0.0",
           "SkiaSharp": "1.68.0",
           "SkiaSharp.Views": "1.68.0",
           "SkiaSharp.Views.Forms": "1.68.0",
+          "System.Reflection.Emit": "4.3.0",
           "Xamarin.Essentials": "1.1.0",
-          "Xamarin.Forms": "3.4.0.1008975"
+          "Xamarin.Forms": "3.6.0.344457"
         },
         "compile": {
           "bin/placeholder/App1.dll": {}
@@ -887,6 +1319,368 @@
     }
   },
   "libraries": {
+    "Microsoft.Extensions.Configuration/3.0.0-preview5.19227.9": {
+      "sha512": "+kJ8TvpBLJG88LwFFa1oAqlar66+vnZnHPe9Y0EWvqI8owmwz7MdfDcQp9nlIHvI6tqD2z1nvWxyr8ISQvsOdw==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration/3.0.0-preview5.19227.9",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.xml",
+        "microsoft.extensions.configuration.3.0.0-preview5.19227.9.nupkg.sha512",
+        "microsoft.extensions.configuration.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.Configuration.Abstractions/3.0.0-preview5.19227.9": {
+      "sha512": "sJQ8bg8iIUaWAQhGdy266dYBD9NT5L+wbaaEdW0oLun7OMPVdV8ud4uYPFWCFfbu0nI0rIGh5DpGCPwYWv1K2Q==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration.abstractions/3.0.0-preview5.19227.9",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.xml",
+        "microsoft.extensions.configuration.abstractions.3.0.0-preview5.19227.9.nupkg.sha512",
+        "microsoft.extensions.configuration.abstractions.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.DependencyInjection/3.0.0-preview5.19227.9": {
+      "sha512": "Cv12nD39T5xmDWXs0dL2daCJGbW5MRd7eKo1F/CN8YxgTT1kLLc1ut5dP/3kQRjxqhK2ENx3sMzjyxShJj0SvQ==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencyinjection/3.0.0-preview5.19227.9",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net461/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/net461/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/netcoreapp3.0/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/netcoreapp3.0/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.xml",
+        "microsoft.extensions.dependencyinjection.3.0.0-preview5.19227.9.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/3.0.0-preview5.19227.9": {
+      "sha512": "prNHMYK168+KgByJWQro7sYC4t31AYF3znl7rtPfB62jF/g/BYXgkatC7AUEgQAATovR4qE0rBL1SnGwzOfJ9Q==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/3.0.0-preview5.19227.9",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "microsoft.extensions.dependencyinjection.abstractions.3.0.0-preview5.19227.9.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.abstractions.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.Primitives/3.0.0-preview5.19227.9": {
+      "sha512": "bOTGNyZdl6yTriJq/P6ubi4JpAVje896WXx6KcAtP7cZ/OwEP8quls4h1pRbzoSiWgSjdofBSV7JYpC7OFeHBQ==",
+      "type": "package",
+      "path": "microsoft.extensions.primitives/3.0.0-preview5.19227.9",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netcoreapp3.0/Microsoft.Extensions.Primitives.dll",
+        "lib/netcoreapp3.0/Microsoft.Extensions.Primitives.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Primitives.xml",
+        "microsoft.extensions.primitives.3.0.0-preview5.19227.9.nupkg.sha512",
+        "microsoft.extensions.primitives.nuspec"
+      ]
+    },
+    "Microsoft.NETCore.UniversalWindowsPlatform/6.2.8": {
+      "sha512": "xnpp1xvvIg9ggb2ZeMqA6WdS4iMrm+THrFa5dhVYRfFmjDeVAUVFoxEyYd4LYkJqEcdXADdm5tdfFLZvCGa/Qw==",
+      "type": "package",
+      "path": "microsoft.netcore.universalwindowsplatform/6.2.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "build/Microsoft.NETCore.UniversalWindowsPlatform.props",
+        "build/Microsoft.NetCore.UniversalWindowsPlatform.targets",
+        "microsoft.netcore.universalwindowsplatform.6.2.8.nupkg.sha512",
+        "microsoft.netcore.universalwindowsplatform.nuspec",
+        "ref/netcore50/_._",
+        "ref/uap10.0.15138/Microsoft.CSharp.dll",
+        "ref/uap10.0.15138/Microsoft.CSharp.xml",
+        "ref/uap10.0.15138/Microsoft.VisualBasic.dll",
+        "ref/uap10.0.15138/Microsoft.VisualBasic.xml",
+        "ref/uap10.0.15138/Microsoft.Win32.Primitives.dll",
+        "ref/uap10.0.15138/Microsoft.Win32.Primitives.xml",
+        "ref/uap10.0.15138/System.AppContext.dll",
+        "ref/uap10.0.15138/System.AppContext.xml",
+        "ref/uap10.0.15138/System.Buffers.dll",
+        "ref/uap10.0.15138/System.Buffers.xml",
+        "ref/uap10.0.15138/System.Collections.Concurrent.dll",
+        "ref/uap10.0.15138/System.Collections.Concurrent.xml",
+        "ref/uap10.0.15138/System.Collections.Immutable.dll",
+        "ref/uap10.0.15138/System.Collections.Immutable.xml",
+        "ref/uap10.0.15138/System.Collections.NonGeneric.dll",
+        "ref/uap10.0.15138/System.Collections.NonGeneric.xml",
+        "ref/uap10.0.15138/System.Collections.Specialized.dll",
+        "ref/uap10.0.15138/System.Collections.Specialized.xml",
+        "ref/uap10.0.15138/System.Collections.dll",
+        "ref/uap10.0.15138/System.Collections.xml",
+        "ref/uap10.0.15138/System.ComponentModel.Annotations.dll",
+        "ref/uap10.0.15138/System.ComponentModel.Annotations.xml",
+        "ref/uap10.0.15138/System.ComponentModel.Composition.dll",
+        "ref/uap10.0.15138/System.ComponentModel.DataAnnotations.dll",
+        "ref/uap10.0.15138/System.ComponentModel.EventBasedAsync.dll",
+        "ref/uap10.0.15138/System.ComponentModel.EventBasedAsync.xml",
+        "ref/uap10.0.15138/System.ComponentModel.Primitives.dll",
+        "ref/uap10.0.15138/System.ComponentModel.Primitives.xml",
+        "ref/uap10.0.15138/System.ComponentModel.TypeConverter.dll",
+        "ref/uap10.0.15138/System.ComponentModel.TypeConverter.xml",
+        "ref/uap10.0.15138/System.ComponentModel.dll",
+        "ref/uap10.0.15138/System.ComponentModel.xml",
+        "ref/uap10.0.15138/System.Configuration.dll",
+        "ref/uap10.0.15138/System.Console.dll",
+        "ref/uap10.0.15138/System.Console.xml",
+        "ref/uap10.0.15138/System.Core.dll",
+        "ref/uap10.0.15138/System.Data.Common.dll",
+        "ref/uap10.0.15138/System.Data.Common.xml",
+        "ref/uap10.0.15138/System.Data.SqlClient.dll",
+        "ref/uap10.0.15138/System.Data.SqlClient.xml",
+        "ref/uap10.0.15138/System.Data.dll",
+        "ref/uap10.0.15138/System.Diagnostics.Contracts.dll",
+        "ref/uap10.0.15138/System.Diagnostics.Contracts.xml",
+        "ref/uap10.0.15138/System.Diagnostics.Debug.dll",
+        "ref/uap10.0.15138/System.Diagnostics.Debug.xml",
+        "ref/uap10.0.15138/System.Diagnostics.FileVersionInfo.dll",
+        "ref/uap10.0.15138/System.Diagnostics.FileVersionInfo.xml",
+        "ref/uap10.0.15138/System.Diagnostics.Process.dll",
+        "ref/uap10.0.15138/System.Diagnostics.Process.xml",
+        "ref/uap10.0.15138/System.Diagnostics.StackTrace.dll",
+        "ref/uap10.0.15138/System.Diagnostics.StackTrace.xml",
+        "ref/uap10.0.15138/System.Diagnostics.TextWriterTraceListener.dll",
+        "ref/uap10.0.15138/System.Diagnostics.TextWriterTraceListener.xml",
+        "ref/uap10.0.15138/System.Diagnostics.Tools.dll",
+        "ref/uap10.0.15138/System.Diagnostics.Tools.xml",
+        "ref/uap10.0.15138/System.Diagnostics.TraceSource.dll",
+        "ref/uap10.0.15138/System.Diagnostics.TraceSource.xml",
+        "ref/uap10.0.15138/System.Diagnostics.Tracing.dll",
+        "ref/uap10.0.15138/System.Diagnostics.Tracing.xml",
+        "ref/uap10.0.15138/System.Drawing.Primitives.dll",
+        "ref/uap10.0.15138/System.Drawing.Primitives.xml",
+        "ref/uap10.0.15138/System.Drawing.dll",
+        "ref/uap10.0.15138/System.Dynamic.Runtime.dll",
+        "ref/uap10.0.15138/System.Dynamic.Runtime.xml",
+        "ref/uap10.0.15138/System.Globalization.Calendars.dll",
+        "ref/uap10.0.15138/System.Globalization.Calendars.xml",
+        "ref/uap10.0.15138/System.Globalization.Extensions.dll",
+        "ref/uap10.0.15138/System.Globalization.Extensions.xml",
+        "ref/uap10.0.15138/System.Globalization.dll",
+        "ref/uap10.0.15138/System.Globalization.xml",
+        "ref/uap10.0.15138/System.IO.Compression.FileSystem.dll",
+        "ref/uap10.0.15138/System.IO.Compression.ZipFile.dll",
+        "ref/uap10.0.15138/System.IO.Compression.ZipFile.xml",
+        "ref/uap10.0.15138/System.IO.Compression.dll",
+        "ref/uap10.0.15138/System.IO.Compression.xml",
+        "ref/uap10.0.15138/System.IO.FileSystem.DriveInfo.dll",
+        "ref/uap10.0.15138/System.IO.FileSystem.DriveInfo.xml",
+        "ref/uap10.0.15138/System.IO.FileSystem.Primitives.dll",
+        "ref/uap10.0.15138/System.IO.FileSystem.Primitives.xml",
+        "ref/uap10.0.15138/System.IO.FileSystem.Watcher.dll",
+        "ref/uap10.0.15138/System.IO.FileSystem.Watcher.xml",
+        "ref/uap10.0.15138/System.IO.FileSystem.dll",
+        "ref/uap10.0.15138/System.IO.FileSystem.xml",
+        "ref/uap10.0.15138/System.IO.IsolatedStorage.dll",
+        "ref/uap10.0.15138/System.IO.IsolatedStorage.xml",
+        "ref/uap10.0.15138/System.IO.MemoryMappedFiles.dll",
+        "ref/uap10.0.15138/System.IO.MemoryMappedFiles.xml",
+        "ref/uap10.0.15138/System.IO.Pipes.dll",
+        "ref/uap10.0.15138/System.IO.Pipes.xml",
+        "ref/uap10.0.15138/System.IO.Ports.dll",
+        "ref/uap10.0.15138/System.IO.Ports.xml",
+        "ref/uap10.0.15138/System.IO.UnmanagedMemoryStream.dll",
+        "ref/uap10.0.15138/System.IO.UnmanagedMemoryStream.xml",
+        "ref/uap10.0.15138/System.IO.dll",
+        "ref/uap10.0.15138/System.IO.xml",
+        "ref/uap10.0.15138/System.Linq.Expressions.dll",
+        "ref/uap10.0.15138/System.Linq.Expressions.xml",
+        "ref/uap10.0.15138/System.Linq.Parallel.dll",
+        "ref/uap10.0.15138/System.Linq.Parallel.xml",
+        "ref/uap10.0.15138/System.Linq.Queryable.dll",
+        "ref/uap10.0.15138/System.Linq.Queryable.xml",
+        "ref/uap10.0.15138/System.Linq.dll",
+        "ref/uap10.0.15138/System.Linq.xml",
+        "ref/uap10.0.15138/System.Net.Http.Rtc.dll",
+        "ref/uap10.0.15138/System.Net.Http.Rtc.xml",
+        "ref/uap10.0.15138/System.Net.Http.dll",
+        "ref/uap10.0.15138/System.Net.Http.xml",
+        "ref/uap10.0.15138/System.Net.HttpListener.dll",
+        "ref/uap10.0.15138/System.Net.HttpListener.xml",
+        "ref/uap10.0.15138/System.Net.Mail.dll",
+        "ref/uap10.0.15138/System.Net.Mail.xml",
+        "ref/uap10.0.15138/System.Net.NameResolution.dll",
+        "ref/uap10.0.15138/System.Net.NameResolution.xml",
+        "ref/uap10.0.15138/System.Net.NetworkInformation.dll",
+        "ref/uap10.0.15138/System.Net.NetworkInformation.xml",
+        "ref/uap10.0.15138/System.Net.Ping.dll",
+        "ref/uap10.0.15138/System.Net.Ping.xml",
+        "ref/uap10.0.15138/System.Net.Primitives.dll",
+        "ref/uap10.0.15138/System.Net.Primitives.xml",
+        "ref/uap10.0.15138/System.Net.Requests.dll",
+        "ref/uap10.0.15138/System.Net.Requests.xml",
+        "ref/uap10.0.15138/System.Net.Security.dll",
+        "ref/uap10.0.15138/System.Net.Security.xml",
+        "ref/uap10.0.15138/System.Net.ServicePoint.dll",
+        "ref/uap10.0.15138/System.Net.ServicePoint.xml",
+        "ref/uap10.0.15138/System.Net.Sockets.dll",
+        "ref/uap10.0.15138/System.Net.Sockets.xml",
+        "ref/uap10.0.15138/System.Net.WebClient.dll",
+        "ref/uap10.0.15138/System.Net.WebClient.xml",
+        "ref/uap10.0.15138/System.Net.WebHeaderCollection.dll",
+        "ref/uap10.0.15138/System.Net.WebHeaderCollection.xml",
+        "ref/uap10.0.15138/System.Net.WebProxy.dll",
+        "ref/uap10.0.15138/System.Net.WebProxy.xml",
+        "ref/uap10.0.15138/System.Net.WebSockets.Client.dll",
+        "ref/uap10.0.15138/System.Net.WebSockets.Client.xml",
+        "ref/uap10.0.15138/System.Net.WebSockets.dll",
+        "ref/uap10.0.15138/System.Net.WebSockets.xml",
+        "ref/uap10.0.15138/System.Net.dll",
+        "ref/uap10.0.15138/System.Numerics.Vectors.WindowsRuntime.dll",
+        "ref/uap10.0.15138/System.Numerics.Vectors.dll",
+        "ref/uap10.0.15138/System.Numerics.Vectors.xml",
+        "ref/uap10.0.15138/System.Numerics.dll",
+        "ref/uap10.0.15138/System.ObjectModel.dll",
+        "ref/uap10.0.15138/System.ObjectModel.xml",
+        "ref/uap10.0.15138/System.Reflection.Context.dll",
+        "ref/uap10.0.15138/System.Reflection.Context.xml",
+        "ref/uap10.0.15138/System.Reflection.DispatchProxy.dll",
+        "ref/uap10.0.15138/System.Reflection.DispatchProxy.xml",
+        "ref/uap10.0.15138/System.Reflection.Extensions.dll",
+        "ref/uap10.0.15138/System.Reflection.Extensions.xml",
+        "ref/uap10.0.15138/System.Reflection.Metadata.dll",
+        "ref/uap10.0.15138/System.Reflection.Metadata.xml",
+        "ref/uap10.0.15138/System.Reflection.Primitives.dll",
+        "ref/uap10.0.15138/System.Reflection.Primitives.xml",
+        "ref/uap10.0.15138/System.Reflection.TypeExtensions.dll",
+        "ref/uap10.0.15138/System.Reflection.TypeExtensions.xml",
+        "ref/uap10.0.15138/System.Reflection.dll",
+        "ref/uap10.0.15138/System.Reflection.xml",
+        "ref/uap10.0.15138/System.Resources.Reader.dll",
+        "ref/uap10.0.15138/System.Resources.Reader.xml",
+        "ref/uap10.0.15138/System.Resources.ResourceManager.dll",
+        "ref/uap10.0.15138/System.Resources.ResourceManager.xml",
+        "ref/uap10.0.15138/System.Resources.Writer.dll",
+        "ref/uap10.0.15138/System.Resources.Writer.xml",
+        "ref/uap10.0.15138/System.Runtime.CompilerServices.VisualC.dll",
+        "ref/uap10.0.15138/System.Runtime.CompilerServices.VisualC.xml",
+        "ref/uap10.0.15138/System.Runtime.Extensions.dll",
+        "ref/uap10.0.15138/System.Runtime.Extensions.xml",
+        "ref/uap10.0.15138/System.Runtime.Handles.dll",
+        "ref/uap10.0.15138/System.Runtime.Handles.xml",
+        "ref/uap10.0.15138/System.Runtime.InteropServices.RuntimeInformation.dll",
+        "ref/uap10.0.15138/System.Runtime.InteropServices.RuntimeInformation.xml",
+        "ref/uap10.0.15138/System.Runtime.InteropServices.WindowsRuntime.dll",
+        "ref/uap10.0.15138/System.Runtime.InteropServices.WindowsRuntime.xml",
+        "ref/uap10.0.15138/System.Runtime.InteropServices.dll",
+        "ref/uap10.0.15138/System.Runtime.InteropServices.xml",
+        "ref/uap10.0.15138/System.Runtime.Numerics.dll",
+        "ref/uap10.0.15138/System.Runtime.Numerics.xml",
+        "ref/uap10.0.15138/System.Runtime.Serialization.Formatters.dll",
+        "ref/uap10.0.15138/System.Runtime.Serialization.Formatters.xml",
+        "ref/uap10.0.15138/System.Runtime.Serialization.Json.dll",
+        "ref/uap10.0.15138/System.Runtime.Serialization.Json.xml",
+        "ref/uap10.0.15138/System.Runtime.Serialization.Primitives.dll",
+        "ref/uap10.0.15138/System.Runtime.Serialization.Primitives.xml",
+        "ref/uap10.0.15138/System.Runtime.Serialization.Xml.dll",
+        "ref/uap10.0.15138/System.Runtime.Serialization.Xml.xml",
+        "ref/uap10.0.15138/System.Runtime.Serialization.dll",
+        "ref/uap10.0.15138/System.Runtime.WindowsRuntime.UI.Xaml.dll",
+        "ref/uap10.0.15138/System.Runtime.WindowsRuntime.dll",
+        "ref/uap10.0.15138/System.Runtime.dll",
+        "ref/uap10.0.15138/System.Runtime.xml",
+        "ref/uap10.0.15138/System.Security.AccessControl.dll",
+        "ref/uap10.0.15138/System.Security.AccessControl.xml",
+        "ref/uap10.0.15138/System.Security.Claims.dll",
+        "ref/uap10.0.15138/System.Security.Claims.xml",
+        "ref/uap10.0.15138/System.Security.Cryptography.Algorithms.dll",
+        "ref/uap10.0.15138/System.Security.Cryptography.Algorithms.xml",
+        "ref/uap10.0.15138/System.Security.Cryptography.Cng.dll",
+        "ref/uap10.0.15138/System.Security.Cryptography.Cng.xml",
+        "ref/uap10.0.15138/System.Security.Cryptography.Csp.dll",
+        "ref/uap10.0.15138/System.Security.Cryptography.Csp.xml",
+        "ref/uap10.0.15138/System.Security.Cryptography.Encoding.dll",
+        "ref/uap10.0.15138/System.Security.Cryptography.Encoding.xml",
+        "ref/uap10.0.15138/System.Security.Cryptography.Primitives.dll",
+        "ref/uap10.0.15138/System.Security.Cryptography.Primitives.xml",
+        "ref/uap10.0.15138/System.Security.Cryptography.X509Certificates.dll",
+        "ref/uap10.0.15138/System.Security.Cryptography.X509Certificates.xml",
+        "ref/uap10.0.15138/System.Security.Principal.Windows.dll",
+        "ref/uap10.0.15138/System.Security.Principal.Windows.xml",
+        "ref/uap10.0.15138/System.Security.Principal.dll",
+        "ref/uap10.0.15138/System.Security.Principal.xml",
+        "ref/uap10.0.15138/System.Security.SecureString.dll",
+        "ref/uap10.0.15138/System.Security.SecureString.xml",
+        "ref/uap10.0.15138/System.Security.dll",
+        "ref/uap10.0.15138/System.ServiceModel.Duplex.dll",
+        "ref/uap10.0.15138/System.ServiceModel.Http.dll",
+        "ref/uap10.0.15138/System.ServiceModel.NetTcp.dll",
+        "ref/uap10.0.15138/System.ServiceModel.Primitives.dll",
+        "ref/uap10.0.15138/System.ServiceModel.Security.dll",
+        "ref/uap10.0.15138/System.ServiceModel.Web.dll",
+        "ref/uap10.0.15138/System.ServiceModel.dll",
+        "ref/uap10.0.15138/System.ServiceProcess.dll",
+        "ref/uap10.0.15138/System.Text.Encoding.CodePages.dll",
+        "ref/uap10.0.15138/System.Text.Encoding.CodePages.xml",
+        "ref/uap10.0.15138/System.Text.Encoding.Extensions.dll",
+        "ref/uap10.0.15138/System.Text.Encoding.Extensions.xml",
+        "ref/uap10.0.15138/System.Text.Encoding.dll",
+        "ref/uap10.0.15138/System.Text.Encoding.xml",
+        "ref/uap10.0.15138/System.Text.RegularExpressions.dll",
+        "ref/uap10.0.15138/System.Text.RegularExpressions.xml",
+        "ref/uap10.0.15138/System.Threading.Overlapped.dll",
+        "ref/uap10.0.15138/System.Threading.Overlapped.xml",
+        "ref/uap10.0.15138/System.Threading.Tasks.Dataflow.dll",
+        "ref/uap10.0.15138/System.Threading.Tasks.Dataflow.xml",
+        "ref/uap10.0.15138/System.Threading.Tasks.Parallel.dll",
+        "ref/uap10.0.15138/System.Threading.Tasks.Parallel.xml",
+        "ref/uap10.0.15138/System.Threading.Tasks.dll",
+        "ref/uap10.0.15138/System.Threading.Tasks.xml",
+        "ref/uap10.0.15138/System.Threading.Thread.dll",
+        "ref/uap10.0.15138/System.Threading.Thread.xml",
+        "ref/uap10.0.15138/System.Threading.ThreadPool.dll",
+        "ref/uap10.0.15138/System.Threading.ThreadPool.xml",
+        "ref/uap10.0.15138/System.Threading.Timer.dll",
+        "ref/uap10.0.15138/System.Threading.Timer.xml",
+        "ref/uap10.0.15138/System.Threading.dll",
+        "ref/uap10.0.15138/System.Threading.xml",
+        "ref/uap10.0.15138/System.Transactions.Local.dll",
+        "ref/uap10.0.15138/System.Transactions.Local.xml",
+        "ref/uap10.0.15138/System.Transactions.dll",
+        "ref/uap10.0.15138/System.ValueTuple.dll",
+        "ref/uap10.0.15138/System.ValueTuple.xml",
+        "ref/uap10.0.15138/System.Web.HttpUtility.dll",
+        "ref/uap10.0.15138/System.Web.HttpUtility.xml",
+        "ref/uap10.0.15138/System.Web.dll",
+        "ref/uap10.0.15138/System.Windows.dll",
+        "ref/uap10.0.15138/System.Xml.Linq.dll",
+        "ref/uap10.0.15138/System.Xml.ReaderWriter.dll",
+        "ref/uap10.0.15138/System.Xml.ReaderWriter.xml",
+        "ref/uap10.0.15138/System.Xml.Serialization.dll",
+        "ref/uap10.0.15138/System.Xml.XDocument.dll",
+        "ref/uap10.0.15138/System.Xml.XDocument.xml",
+        "ref/uap10.0.15138/System.Xml.XPath.XDocument.dll",
+        "ref/uap10.0.15138/System.Xml.XPath.XDocument.xml",
+        "ref/uap10.0.15138/System.Xml.XPath.dll",
+        "ref/uap10.0.15138/System.Xml.XPath.xml",
+        "ref/uap10.0.15138/System.Xml.XmlDocument.dll",
+        "ref/uap10.0.15138/System.Xml.XmlDocument.xml",
+        "ref/uap10.0.15138/System.Xml.XmlSerializer.dll",
+        "ref/uap10.0.15138/System.Xml.XmlSerializer.xml",
+        "ref/uap10.0.15138/System.Xml.dll",
+        "ref/uap10.0.15138/System.dll",
+        "ref/uap10.0.15138/WindowsBase.dll",
+        "ref/uap10.0.15138/mscorlib.dll",
+        "ref/uap10.0.15138/netstandard.dll",
+        "runtime.json"
+      ]
+    },
     "MR.Gestures/2.1.0": {
       "sha512": "6tyC+NXxyrT9JcXCVJPeLVhpwjSnw00eDMFxXO5TEtj02cUWHAUo7h07vhu9ErGMIczIJcJm7du0I+c26lKDpA==",
       "type": "package",
@@ -1019,6 +1813,52 @@
         "skiasharp.views.forms.nuspec"
       ]
     },
+    "System.Buffers/4.4.0": {
+      "sha512": "AwarXzzoDwX6BgrhjoJsk6tUezZEozOT5Y9QKF94Gl4JK91I4PIIBkBco9068Y9/Dra8Dkbie99kXB8+1BaYKw==",
+      "type": "package",
+      "path": "system.buffers/4.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.1/System.Buffers.dll",
+        "lib/netstandard1.1/System.Buffers.xml",
+        "lib/netstandard2.0/System.Buffers.dll",
+        "lib/netstandard2.0/System.Buffers.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.1/System.Buffers.dll",
+        "ref/netstandard1.1/System.Buffers.xml",
+        "ref/netstandard2.0/System.Buffers.dll",
+        "ref/netstandard2.0/System.Buffers.xml",
+        "system.buffers.4.4.0.nupkg.sha512",
+        "system.buffers.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Memory/4.5.2": {
+      "sha512": "fvq1GNmUFwbKv+aLVYYdgu/+gc8Nu9oFujOxIjPrsf+meis9JBzTPDL6aP/eeGOz9yPj6rRLUbOjKMpsMEWpNg==",
+      "type": "package",
+      "path": "system.memory/4.5.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netcoreapp2.1/_._",
+        "lib/netstandard1.1/System.Memory.dll",
+        "lib/netstandard1.1/System.Memory.xml",
+        "lib/netstandard2.0/System.Memory.dll",
+        "lib/netstandard2.0/System.Memory.xml",
+        "ref/netcoreapp2.1/_._",
+        "system.memory.4.5.2.nupkg.sha512",
+        "system.memory.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "System.Numerics.Vectors/4.5.0": {
       "sha512": "QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
       "type": "package",
@@ -1062,6 +1902,67 @@
         "ref/xamarinwatchos10/_._",
         "system.numerics.vectors.4.5.0.nupkg.sha512",
         "system.numerics.vectors.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Reflection.Emit/4.3.0": {
+      "sha512": "228FG0jLcIwTVJyz8CLFKueVqQK36ANazUManGaJHkO0icjiIypKW7YLWLIWahyIkdh5M7mV2dJepllLyA1SKg==",
+      "type": "package",
+      "path": "system.reflection.emit/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/monotouch10/_._",
+        "lib/net45/_._",
+        "lib/netcore50/System.Reflection.Emit.dll",
+        "lib/netstandard1.3/System.Reflection.Emit.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/net45/_._",
+        "ref/netstandard1.1/System.Reflection.Emit.dll",
+        "ref/netstandard1.1/System.Reflection.Emit.xml",
+        "ref/netstandard1.1/de/System.Reflection.Emit.xml",
+        "ref/netstandard1.1/es/System.Reflection.Emit.xml",
+        "ref/netstandard1.1/fr/System.Reflection.Emit.xml",
+        "ref/netstandard1.1/it/System.Reflection.Emit.xml",
+        "ref/netstandard1.1/ja/System.Reflection.Emit.xml",
+        "ref/netstandard1.1/ko/System.Reflection.Emit.xml",
+        "ref/netstandard1.1/ru/System.Reflection.Emit.xml",
+        "ref/netstandard1.1/zh-hans/System.Reflection.Emit.xml",
+        "ref/netstandard1.1/zh-hant/System.Reflection.Emit.xml",
+        "ref/xamarinmac20/_._",
+        "system.reflection.emit.4.3.0.nupkg.sha512",
+        "system.reflection.emit.nuspec"
+      ]
+    },
+    "System.Runtime.CompilerServices.Unsafe/4.6.0-preview5.19224.8": {
+      "sha512": "Jd+o/BYAAh/xd35zWBqoxngmT/r00asWbYwydntyxjUNs7Rf44kA/DKf6Ve8d7tGT6VKCzXLpB02eydO4IxU2w==",
+      "type": "package",
+      "path": "system.runtime.compilerservices.unsafe/4.6.0-preview5.19224.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "system.runtime.compilerservices.unsafe.4.6.0-preview5.19224.8.nupkg.sha512",
+        "system.runtime.compilerservices.unsafe.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
@@ -1110,10 +2011,10 @@
         "xamarin.essentials.nuspec"
       ]
     },
-    "Xamarin.Forms/3.6.0.344457": {
-      "sha512": "7IffIKgL0fmgbfCLKzXaFKJ7uOueKiz/BIgmAG1Z5WMn+vMKeALe5GgRs3Uddo670VzllIHWkNEZD3lG+e02bw==",
+    "Xamarin.Forms/4.0.0.394984-pre10": {
+      "sha512": "ht4HEfWgA5FLBCdc4N/ylc8Ctd7DXW9ipVS6+OWVP0lmVMsY+/FwAjCqP2JGqO29iVAYjEpITzp9OjskBRT3+g==",
       "type": "package",
-      "path": "xamarin.forms/3.6.0.344457",
+      "path": "xamarin.forms/4.0.0.394984-pre10",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1151,6 +2052,26 @@
         "lib/MonoAndroid81/Xamarin.Forms.Xaml.dll",
         "lib/MonoAndroid81/Xamarin.Forms.Xaml.pdb",
         "lib/MonoAndroid81/Xamarin.Forms.Xaml.xml",
+        "lib/MonoAndroid81/de/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid81/de/Xamarin.Forms.Xaml.xml",
+        "lib/MonoAndroid81/es/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid81/es/Xamarin.Forms.Xaml.xml",
+        "lib/MonoAndroid81/fr/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid81/fr/Xamarin.Forms.Xaml.xml",
+        "lib/MonoAndroid81/it/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid81/it/Xamarin.Forms.Xaml.xml",
+        "lib/MonoAndroid81/ja/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid81/ja/Xamarin.Forms.Xaml.xml",
+        "lib/MonoAndroid81/ko/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid81/ko/Xamarin.Forms.Xaml.xml",
+        "lib/MonoAndroid81/pt-br/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid81/pt-br/Xamarin.Forms.Xaml.xml",
+        "lib/MonoAndroid81/ru/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid81/ru/Xamarin.Forms.Xaml.xml",
+        "lib/MonoAndroid81/zh-Hans/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid81/zh-Hans/Xamarin.Forms.Xaml.xml",
+        "lib/MonoAndroid81/zh-Hant/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid81/zh-Hant/Xamarin.Forms.Xaml.xml",
         "lib/MonoAndroid90/Design/Xamarin.Forms.Core.Design.dll",
         "lib/MonoAndroid90/Design/Xamarin.Forms.Xaml.Design.dll",
         "lib/MonoAndroid90/FormsViewGroup.dll",
@@ -1164,6 +2085,26 @@
         "lib/MonoAndroid90/Xamarin.Forms.Xaml.dll",
         "lib/MonoAndroid90/Xamarin.Forms.Xaml.pdb",
         "lib/MonoAndroid90/Xamarin.Forms.Xaml.xml",
+        "lib/MonoAndroid90/de/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid90/de/Xamarin.Forms.Xaml.xml",
+        "lib/MonoAndroid90/es/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid90/es/Xamarin.Forms.Xaml.xml",
+        "lib/MonoAndroid90/fr/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid90/fr/Xamarin.Forms.Xaml.xml",
+        "lib/MonoAndroid90/it/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid90/it/Xamarin.Forms.Xaml.xml",
+        "lib/MonoAndroid90/ja/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid90/ja/Xamarin.Forms.Xaml.xml",
+        "lib/MonoAndroid90/ko/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid90/ko/Xamarin.Forms.Xaml.xml",
+        "lib/MonoAndroid90/pt-br/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid90/pt-br/Xamarin.Forms.Xaml.xml",
+        "lib/MonoAndroid90/ru/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid90/ru/Xamarin.Forms.Xaml.xml",
+        "lib/MonoAndroid90/zh-Hans/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid90/zh-Hans/Xamarin.Forms.Xaml.xml",
+        "lib/MonoAndroid90/zh-Hant/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid90/zh-Hant/Xamarin.Forms.Xaml.xml",
         "lib/Xamarin.Mac/Design/Xamarin.Forms.Core.Design.dll",
         "lib/Xamarin.Mac/Design/Xamarin.Forms.Xaml.Design.dll",
         "lib/Xamarin.Mac/Xamarin.Forms.Core.dll",
@@ -1185,27 +2126,43 @@
         "lib/Xamarin.iOS10/ca/Xamarin.Forms.Platform.iOS.resources.dll",
         "lib/Xamarin.iOS10/cs/Xamarin.Forms.Platform.iOS.resources.dll",
         "lib/Xamarin.iOS10/da/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/de/Xamarin.Forms.Core.xml",
         "lib/Xamarin.iOS10/de/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/de/Xamarin.Forms.Xaml.xml",
         "lib/Xamarin.iOS10/el/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/es/Xamarin.Forms.Core.xml",
         "lib/Xamarin.iOS10/es/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/es/Xamarin.Forms.Xaml.xml",
         "lib/Xamarin.iOS10/fi/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/fr/Xamarin.Forms.Core.xml",
         "lib/Xamarin.iOS10/fr/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/fr/Xamarin.Forms.Xaml.xml",
         "lib/Xamarin.iOS10/he/Xamarin.Forms.Platform.iOS.resources.dll",
         "lib/Xamarin.iOS10/hi/Xamarin.Forms.Platform.iOS.resources.dll",
         "lib/Xamarin.iOS10/hr/Xamarin.Forms.Platform.iOS.resources.dll",
         "lib/Xamarin.iOS10/hu/Xamarin.Forms.Platform.iOS.resources.dll",
         "lib/Xamarin.iOS10/id/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/it/Xamarin.Forms.Core.xml",
         "lib/Xamarin.iOS10/it/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/it/Xamarin.Forms.Xaml.xml",
+        "lib/Xamarin.iOS10/ja/Xamarin.Forms.Core.xml",
         "lib/Xamarin.iOS10/ja/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/ja/Xamarin.Forms.Xaml.xml",
+        "lib/Xamarin.iOS10/ko/Xamarin.Forms.Core.xml",
         "lib/Xamarin.iOS10/ko/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/ko/Xamarin.Forms.Xaml.xml",
         "lib/Xamarin.iOS10/ms/Xamarin.Forms.Platform.iOS.resources.dll",
         "lib/Xamarin.iOS10/nb/Xamarin.Forms.Platform.iOS.resources.dll",
         "lib/Xamarin.iOS10/nl/Xamarin.Forms.Platform.iOS.resources.dll",
         "lib/Xamarin.iOS10/pl/Xamarin.Forms.Platform.iOS.resources.dll",
-        "lib/Xamarin.iOS10/pt-BR/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/pt-br/Xamarin.Forms.Core.xml",
+        "lib/Xamarin.iOS10/pt-br/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/pt-br/Xamarin.Forms.Xaml.xml",
         "lib/Xamarin.iOS10/pt/Xamarin.Forms.Platform.iOS.resources.dll",
         "lib/Xamarin.iOS10/ro/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/ru/Xamarin.Forms.Core.xml",
         "lib/Xamarin.iOS10/ru/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/ru/Xamarin.Forms.Xaml.xml",
         "lib/Xamarin.iOS10/sk/Xamarin.Forms.Platform.iOS.resources.dll",
         "lib/Xamarin.iOS10/sv/Xamarin.Forms.Platform.iOS.resources.dll",
         "lib/Xamarin.iOS10/th/Xamarin.Forms.Platform.iOS.resources.dll",
@@ -1213,8 +2170,12 @@
         "lib/Xamarin.iOS10/uk/Xamarin.Forms.Platform.iOS.resources.dll",
         "lib/Xamarin.iOS10/vi/Xamarin.Forms.Platform.iOS.resources.dll",
         "lib/Xamarin.iOS10/zh-HK/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/zh-Hans/Xamarin.Forms.Core.xml",
         "lib/Xamarin.iOS10/zh-Hans/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/zh-Hans/Xamarin.Forms.Xaml.xml",
+        "lib/Xamarin.iOS10/zh-Hant/Xamarin.Forms.Core.xml",
         "lib/Xamarin.iOS10/zh-Hant/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/zh-Hant/Xamarin.Forms.Xaml.xml",
         "lib/netstandard1.0/Design/Xamarin.Forms.Core.Design.dll",
         "lib/netstandard1.0/Design/Xamarin.Forms.Xaml.Design.dll",
         "lib/netstandard1.0/Xamarin.Forms.Core.dll",
@@ -1233,6 +2194,26 @@
         "lib/netstandard2.0/Xamarin.Forms.Xaml.dll",
         "lib/netstandard2.0/Xamarin.Forms.Xaml.pdb",
         "lib/netstandard2.0/Xamarin.Forms.Xaml.xml",
+        "lib/netstandard2.0/de/Xamarin.Forms.Core.xml",
+        "lib/netstandard2.0/de/Xamarin.Forms.Xaml.xml",
+        "lib/netstandard2.0/es/Xamarin.Forms.Core.xml",
+        "lib/netstandard2.0/es/Xamarin.Forms.Xaml.xml",
+        "lib/netstandard2.0/fr/Xamarin.Forms.Core.xml",
+        "lib/netstandard2.0/fr/Xamarin.Forms.Xaml.xml",
+        "lib/netstandard2.0/it/Xamarin.Forms.Core.xml",
+        "lib/netstandard2.0/it/Xamarin.Forms.Xaml.xml",
+        "lib/netstandard2.0/ja/Xamarin.Forms.Core.xml",
+        "lib/netstandard2.0/ja/Xamarin.Forms.Xaml.xml",
+        "lib/netstandard2.0/ko/Xamarin.Forms.Core.xml",
+        "lib/netstandard2.0/ko/Xamarin.Forms.Xaml.xml",
+        "lib/netstandard2.0/pt-br/Xamarin.Forms.Core.xml",
+        "lib/netstandard2.0/pt-br/Xamarin.Forms.Xaml.xml",
+        "lib/netstandard2.0/ru/Xamarin.Forms.Core.xml",
+        "lib/netstandard2.0/ru/Xamarin.Forms.Xaml.xml",
+        "lib/netstandard2.0/zh-Hans/Xamarin.Forms.Core.xml",
+        "lib/netstandard2.0/zh-Hans/Xamarin.Forms.Xaml.xml",
+        "lib/netstandard2.0/zh-Hant/Xamarin.Forms.Core.xml",
+        "lib/netstandard2.0/zh-Hant/Xamarin.Forms.Xaml.xml",
         "lib/tizen40/Design/Xamarin.Forms.Core.Design.dll",
         "lib/tizen40/Design/Xamarin.Forms.Xaml.Design.dll",
         "lib/tizen40/Xamarin.Forms.Core.dll",
@@ -1271,7 +2252,7 @@
         "lib/uap10.0/Xamarin.Forms.Xaml.dll",
         "lib/uap10.0/Xamarin.Forms.Xaml.pdb",
         "lib/uap10.0/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.3.6.0.344457.nupkg.sha512",
+        "xamarin.forms.4.0.0.394984-pre10.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
     },
@@ -1284,25 +2265,33 @@
   "projectFileDependencyGroups": {
     "Xamarin.iOS,Version=v1.0": [
       "App1 >= 1.0.0",
-      "Xamarin.Forms >= 3.6.0.344457"
+      "Microsoft.Extensions.Configuration >= 3.0.0-preview5.19227.9",
+      "Microsoft.Extensions.DependencyInjection >= 3.0.0-preview5.19227.9",
+      "Microsoft.NETCore.UniversalWindowsPlatform >= 6.2.8",
+      "Xamarin.Forms >= 4.0.0.394984-pre10"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {}
+    "C:\\Users\\Minh Duy\\.nuget\\packages\\": {},
+    "C:\\ProgramData\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\VS\\Make-Game\\App1\\App1\\App1.iOS\\App1.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\Minh Duy\\Desktop\\MyDesk\\Mobile\\Project\\Final\\Make-Game\\App1\\App1\\App1.iOS\\App1.iOS.csproj",
       "projectName": "App1.iOS",
-      "projectPath": "D:\\VS\\Make-Game\\App1\\App1\\App1.iOS\\App1.iOS.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\VS\\Make-Game\\App1\\App1\\App1.iOS\\obj\\",
+      "projectPath": "C:\\Users\\Minh Duy\\Desktop\\MyDesk\\Mobile\\Project\\Final\\Make-Game\\App1\\App1\\App1.iOS\\App1.iOS.csproj",
+      "packagesPath": "C:\\Users\\Minh Duy\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Minh Duy\\Desktop\\MyDesk\\Mobile\\Project\\Final\\Make-Game\\App1\\App1\\App1.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
+      "fallbackFolders": [
+        "C:\\ProgramData\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Minh Duy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "xamarinios10"
@@ -1314,8 +2303,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "D:\\VS\\Make-Game\\App1\\App1\\App1\\App1.csproj": {
-              "projectPath": "D:\\VS\\Make-Game\\App1\\App1\\App1\\App1.csproj"
+            "C:\\Users\\Minh Duy\\Desktop\\MyDesk\\Mobile\\Project\\Final\\Make-Game\\App1\\App1\\App1\\App1.csproj": {
+              "projectPath": "C:\\Users\\Minh Duy\\Desktop\\MyDesk\\Mobile\\Project\\Final\\Make-Game\\App1\\App1\\App1\\App1.csproj"
             }
           }
         }
@@ -1324,9 +2313,21 @@
     "frameworks": {
       "xamarinios10": {
         "dependencies": {
+          "Microsoft.Extensions.Configuration": {
+            "target": "Package",
+            "version": "[3.0.0-preview5.19227.9, )"
+          },
+          "Microsoft.Extensions.DependencyInjection": {
+            "target": "Package",
+            "version": "[3.0.0-preview5.19227.9, )"
+          },
+          "Microsoft.NETCore.UniversalWindowsPlatform": {
+            "target": "Package",
+            "version": "[6.2.8, )"
+          },
           "Xamarin.Forms": {
             "target": "Package",
-            "version": "[3.6.0.344457, )"
+            "version": "[4.0.0.394984-pre10, )"
           }
         }
       }

@@ -2,6 +2,11 @@ C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1.A
 C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1.Android\obj\Debug\81\android\assets\App1.dll
 C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1.Android\obj\Debug\81\android\assets\FormsViewGroup.dll
 C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1.Android\obj\Debug\81\android\assets\Java.Interop.dll
+C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1.Android\obj\Debug\81\android\assets\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1.Android\obj\Debug\81\android\assets\Microsoft.Extensions.Configuration.dll
+C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1.Android\obj\Debug\81\android\assets\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1.Android\obj\Debug\81\android\assets\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1.Android\obj\Debug\81\android\assets\Microsoft.Extensions.Primitives.dll
 C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1.Android\obj\Debug\81\android\assets\Mono.Android.dll
 C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1.Android\obj\Debug\81\android\assets\MR.Gestures.dll
 C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1.Android\obj\Debug\81\android\assets\mscorlib.dll
@@ -12,6 +17,7 @@ C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1.A
 C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1.Android\obj\Debug\81\android\assets\System.dll
 C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1.Android\obj\Debug\81\android\assets\System.Numerics.dll
 C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1.Android\obj\Debug\81\android\assets\System.Numerics.Vectors.dll
+C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1.Android\obj\Debug\81\android\assets\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1.Android\obj\Debug\81\android\assets\System.Xml.dll
 C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1.Android\obj\Debug\81\android\assets\System.Xml.Linq.dll
 C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1.Android\obj\Debug\81\android\assets\Xamarin.Android.Arch.Core.Common.dll
@@ -50,4 +56,5 @@ C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1.A
 C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1.Android\obj\Debug\81\android\assets\System.ServiceModel.Internals.dll
 C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1.Android\obj\Debug\81\android\assets\System.Web.Services.dll
 C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1.Android\obj\Debug\81\android\assets\System.Runtime.dll
+C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1.Android\obj\Debug\81\android\assets\System.Memory.dll
 C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1.Android\obj\Debug\81\android\assets\Mono.Security.dll

@@ -1,1 +1,1 @@
-D:\VS\Make-Game\App1\App1\App1.UWP\App1.UWP.csproj;x86
+C:\Users\Minh Duy\Desktop\MyDesk\Mobile\Project\Final\Make-Game\App1\App1\App1.UWP\App1.UWP.csproj;x86

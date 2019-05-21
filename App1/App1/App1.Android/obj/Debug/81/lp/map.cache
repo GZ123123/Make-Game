@@ -1,9 +1,17 @@
 App1
 FormsViewGroup
+Microsoft.Extensions.Configuration.Abstractions
+Microsoft.Extensions.Configuration
+Microsoft.Extensions.DependencyInjection.Abstractions
+Microsoft.Extensions.DependencyInjection
+Microsoft.Extensions.Primitives
 MR.Gestures
 SkiaSharp
 SkiaSharp.Views.Android
 SkiaSharp.Views.Forms
+System.Buffers
+System.Memory
+System.Runtime.CompilerServices.Unsafe
 System.Runtime
 Xamarin.Android.Arch.Core.Common
 Xamarin.Android.Arch.Lifecycle.Common

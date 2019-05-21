@@ -10,7 +10,7 @@
                 PaintSurface="SKCanvasView_PaintSurface" >
         </skia:SKCanvasView>
         <StackLayout>
-            <Label Text="Stick Hero" 
+            <Label Text="Top Bridge" 
                    TextColor="Red"
                    FontSize="54"
                    Margin="0, 50,0 ,50"

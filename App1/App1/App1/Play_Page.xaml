@@ -18,7 +18,7 @@
 
             <!--Tap Content-->
             <mr:BoxView 
-                        Opacity="0"
+                        Opacity="100"
                         LongPressing="Red_LongPressing"
                         LongPressed="Red_LongPressed"
                         LongPressedCommand="{Binding LongPressedCommand}"
